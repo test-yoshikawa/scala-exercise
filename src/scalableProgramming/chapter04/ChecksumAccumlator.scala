@@ -1,4 +1,4 @@
-package scalableProgramming
+package scalableProgramming.chapter04
 import scala.collection.mutable.Map
 
 /**
@@ -7,11 +7,11 @@ import scala.collection.mutable.Map
  * @author Yuki Yoshikawa
  */
 class ChecksumAccumlator {
-	private var sum = 0
+	private var sum = 0	// アクセス修飾子を指定しなければpublicになる
 
-	def add(b: Byte) { sum += b }
+	def add(b: Byte) { sum += b }	// 引数はval
 
-	def checksum(): Int = ~(sum & 0xFF) + 1
+	def checksum(): Int = ~(sum & 0xFF) + 1	//~:ビット反転
 }
 
 /**

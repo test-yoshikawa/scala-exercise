@@ -1,5 +1,7 @@
 package scalableProgramming
 
+import scalableProgramming.chapter04.ChecksumAccumlator
+
 /**
  * @author Yuki Yoshikawa
  */
