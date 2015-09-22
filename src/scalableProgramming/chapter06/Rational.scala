@@ -1,4 +1,4 @@
-package scalableProgramming
+package scalableProgramming.chapter06
 
 /**
  * @author Yuki Yoshikawa
@@ -7,10 +7,12 @@ class Rational(n: Int, d: Int) {
 	// 事前条件falseの場合はIllegalArgumentExceptionをスローする
 	// これより上の処理は実行される
 	require(d != 0)
+	println("Constructor " + n + "/" + d)
+
 	private val g = gcd(n.abs, d.abs)
 	val number: Int = n / g
 	val denom: Int = d / g
-	println("Constructor " + n + "/" + d)
+
 	def this(n: Int) = this(n, 1) // 補助コンストラクタ
 
 	override def toString = number + "/" + denom

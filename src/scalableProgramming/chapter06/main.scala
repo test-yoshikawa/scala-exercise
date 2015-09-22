@@ -1,6 +1,4 @@
-package scalableProgramming
-
-import scalableProgramming.chapter04.ChecksumAccumlator
+package scalableProgramming.chapter06
 
 /**
  * @author Yuki Yoshikawa
@@ -8,15 +6,6 @@ import scalableProgramming.chapter04.ChecksumAccumlator
 object Main {
 
 	def main(args: Array[String]): Unit = {
-		println("chapter4")
-
-		//=======================
-		// シングルトン
-		//=======================
-		println("execute ChecksumAccumlator")
-		println(ChecksumAccumlator.calculate("Chapter4"))
-		println(ChecksumAccumlator.calculate("Chapter4.1"))
-		println(ChecksumAccumlator.calculate("Chapter4"))
 
 		//=======================
 		// Rational
