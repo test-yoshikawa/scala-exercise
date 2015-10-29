@@ -20,10 +20,10 @@ class ElementSpec extends FlatSpec with ShouldMatchers {
 		ele.height should be (3)
 	}
 
-	// うまくいかない・・・(涙)
+	// 参考書通りに書いてもうまくいかない・・・(涙)=>ArrayIndexOutOfBoundsExceptionに変更
 	it should "throws an IAAE if passed a negative width" in {
 		evaluating {
-			elem('x', -2, 3)
-		} should produce [IllegalArgumentException]
+			elem('x', -2, -3)
+		} should produce [ArrayIndexOutOfBoundsException]
 	}
 }

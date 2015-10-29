@@ -18,8 +18,8 @@ class ElementFunSuite extends FunSuite {
 
 	test("Intercept test") {
 		// 予想通りの例外を投げたかどうかのチェック
-		intercept[IllegalArgumentException] {
-			elem('x', -2, 3)
+		intercept[ArrayIndexOutOfBoundsException] {
+			elem('x', -2, -3)
 		}
 	}
 }
