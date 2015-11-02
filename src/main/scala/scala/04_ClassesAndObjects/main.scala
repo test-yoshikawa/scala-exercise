@@ -1,4 +1,4 @@
-package scalableProgramming.chapter04
+package scala.ClassesAndObjects
 
 /**
  * @author Yuki Yoshikawa

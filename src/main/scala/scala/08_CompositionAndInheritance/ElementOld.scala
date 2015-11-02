@@ -1,4 +1,4 @@
-package scalableProgramming.chapter10
+package scala.CompositionAndInheritance
 
 import ElementOld.elem
 /**

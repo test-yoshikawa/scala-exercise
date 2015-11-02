@@ -1,4 +1,5 @@
-package scalableProgramming.chapter04
+package scala.ClassesAndObjects
+
 import scala.collection.mutable.Map
 
 /**

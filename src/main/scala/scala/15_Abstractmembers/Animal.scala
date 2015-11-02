@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
 abstract class Animal {
 	type SuitableFood <: Food
 	def eat(food: SuitableFood)

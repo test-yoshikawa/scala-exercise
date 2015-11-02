@@ -1,4 +1,4 @@
-package scalableProgramming.chapter27
+package scala.WorkingWithXML
 
 class CCTherm {
 	val description = "ht dog #5"

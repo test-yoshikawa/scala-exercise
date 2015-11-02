@@ -1,4 +1,4 @@
-package scalableProgramming.chapter24
+package scala.TheScalaCollectionsAPI
 
 import scala.collection.mutable._
 

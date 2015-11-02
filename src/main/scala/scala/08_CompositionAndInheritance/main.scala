@@ -1,4 +1,4 @@
-package scalableProgramming.chapter10
+package scala.CompositionAndInheritance
 
 /**
  * @author Yuki Yoshikawa

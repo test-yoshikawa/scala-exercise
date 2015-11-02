@@ -1,4 +1,4 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
 /** 通貨計算サンプル */
 object currencySample {

@@ -1,4 +1,4 @@
-package scalableProgramming.chapter18
+package scala.StatefulObjects
 
 /**
  * ミュータブルな銀行口座クラス

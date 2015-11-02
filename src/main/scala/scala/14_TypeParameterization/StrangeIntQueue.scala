@@ -1,4 +1,4 @@
-package scalableProgramming.chapter19
+package scala.TypeParameterization
 
 /**
  * @author Yuki Yoshikawa

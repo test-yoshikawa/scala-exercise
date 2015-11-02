@@ -1,4 +1,4 @@
-package scalableProgramming.chapter06
+package scala.FunctionalObjects
 
 /**
  * @author Yuki Yoshikawa

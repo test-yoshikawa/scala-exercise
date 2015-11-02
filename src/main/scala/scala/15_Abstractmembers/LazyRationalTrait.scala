@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
 trait LazyRationalTrait {
 	val numerArg: Int
 	val denomArg: Int

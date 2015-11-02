@@ -1,4 +1,4 @@
-package scalableProgramming.chapter13
+package scala.PackagesAndImports
 
 /**
  * インポートのサンプル

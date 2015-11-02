@@ -1,6 +1,6 @@
-package scalableProgramming.chapter15
+package scala.CaseClassesAndPatternMatching
 
-import scalableProgramming.chapter15.Expr._
+import scala.CaseClassesAndPatternMatching.Expr._
 
 
 /**

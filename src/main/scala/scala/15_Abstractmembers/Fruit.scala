@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
 abstract class Fruit {
 	val v: String	// valueの'v'
 	def m: String	// methodの'm'

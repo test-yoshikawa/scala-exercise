@@ -1,8 +1,7 @@
-package scalableProgramming.chapter21
+package scala.ImplicitConversionsAndParameters
 
 import Implicit._	// 暗黙の型を利用したい場合はインポートをする
 import JoePrefs._
-
 
 object implicitSample {
 

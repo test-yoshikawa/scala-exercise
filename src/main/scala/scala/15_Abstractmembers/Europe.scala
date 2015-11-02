@@ -1,4 +1,4 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
 /** ヨーロッパの通貨オブジェクト */
 object Europe extends CurrencyZone {

@@ -1,4 +1,4 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
 /** 通貨の換算レート */
 object CurrencyConverter {

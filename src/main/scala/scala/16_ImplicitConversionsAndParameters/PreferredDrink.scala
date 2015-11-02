@@ -1,3 +1,3 @@
-package scalableProgramming.chapter21
+package scala.ImplicitConversionsAndParameters
 
 class PreferredDrink (val preference: String)

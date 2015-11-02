@@ -1,4 +1,4 @@
-package scalableProgramming.chapter27
+package scala.WorkingWithXML
 
 object xmlSample {
 

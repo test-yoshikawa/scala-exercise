@@ -1,4 +1,4 @@
-package scalableProgramming.chapter29
+package scala.ModularProgrammingUsingObjects
 
 /**
  * 処理実行用オブジェクト

@@ -1,4 +1,4 @@
-package scalableProgramming.chapter15
+package scala.CaseClassesAndPatternMatching
 
 import javafx.application.Application
 

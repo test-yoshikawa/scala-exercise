@@ -1,7 +1,7 @@
-package scalableProgramming.chapter14
+package scala.AssertionsAndUnitTesting
 
 import org.scalatest.junit.JUnit3Suite
-import scalableProgramming.chapter10.Element.elem
+import scala.CompositionAndInheritance.Element.elem
 
 /**
  * JUnit3Suiteを使用したJUnitテストクラス

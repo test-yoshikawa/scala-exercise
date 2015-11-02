@@ -1,4 +1,4 @@
-package scalableProgramming.chapter17
+package scala.Collections
 
 import scala.collection._
 

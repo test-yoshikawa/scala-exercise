@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
  object abstractTypeSample {
 
  	def main(args: Array[String]): Unit = {

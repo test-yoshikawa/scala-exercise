@@ -1,4 +1,4 @@
-package scalableProgramming.chapter21
+package scala.ImplicitConversionsAndParameters
 
 object Greeter {
 

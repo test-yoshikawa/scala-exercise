@@ -1,4 +1,4 @@
-package scalableProgramming.chapter21
+package scala.ImplicitConversionsAndParameters
 
 object JoePrefs {
 	implicit val prompt = new PreferredPrompt("Yes, master>")

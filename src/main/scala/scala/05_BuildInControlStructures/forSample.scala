@@ -1,4 +1,4 @@
-package scalableProgramming.chapter07
+package scala.BuildInControlStructures
 
 /**
  * @author Yuki Yoshikawa

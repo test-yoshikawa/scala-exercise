@@ -1,3 +1,3 @@
-package scalableProgramming.chapter21
+package scala.ImplicitConversionsAndParameters
 
 class PreferredPrompt (val preference: String)

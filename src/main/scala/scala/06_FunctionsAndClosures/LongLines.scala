@@ -1,4 +1,4 @@
-package scalableProgramming.chapter08
+package scala.FunctionsAndClosures
 
 import scala.io.Source
 

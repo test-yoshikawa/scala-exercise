@@ -1,9 +1,9 @@
-package scalableProgramming.chapter14
+package scala.AssertionsAndUnitTesting
 
 import junit.framework.TestCase
 import junit.framework.Assert.assertEquals
 import junit.framework.Assert.fail
-import scalableProgramming.chapter10.Element.elem
+import scala.CompositionAndInheritance.Element.elem
 
 /**
  * JUnitを使用したテストクラス

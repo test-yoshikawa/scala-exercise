@@ -1,4 +1,4 @@
-package scalableProgramming.chapter29
+package scala.ModularProgrammingUsingObjects
 
 /**
  * モック実装のブラウザーモジュール

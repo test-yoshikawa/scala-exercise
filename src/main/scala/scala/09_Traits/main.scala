@@ -1,4 +1,4 @@
-package scalableProgramming.chapter12
+package scala.Traits
 
 /**
  * @author Yuki Yoshikawa

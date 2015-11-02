@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
 class RationalClass(n: Int, d: Int) extends {
 	val numerArg = n
 	val denomArg = d

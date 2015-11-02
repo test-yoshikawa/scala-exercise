@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
 abstract class Apple extends Fruit {
 	val v: String
 	val m: String	// OK : defをvalでオーバーらいづすることは認められる

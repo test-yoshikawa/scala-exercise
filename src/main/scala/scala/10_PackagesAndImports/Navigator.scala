@@ -1,4 +1,4 @@
-package scalableProgramming.chapter13 {
+package scala.PackagesAndImports {
 	package navigation {
 		// chapter13.navigationパッケージ
 		class Navigator {

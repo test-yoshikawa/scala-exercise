@@ -1,4 +1,4 @@
-package scalableProgramming.chapter09
+package scala.ControlAbstraction
 
 /**
  * @author Yuki Yoshikawa

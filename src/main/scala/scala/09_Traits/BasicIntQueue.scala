@@ -1,4 +1,4 @@
-package scalableProgramming.chapter12
+package scala.Traits
 
 import scala.collection.mutable.ArrayBuffer
 

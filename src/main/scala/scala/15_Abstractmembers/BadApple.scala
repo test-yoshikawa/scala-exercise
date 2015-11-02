@@ -1,8 +1,5 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
-/**
- * @author Yuki Yoshikawa
- */
 abstract class BadApple extends Fruit {
 
 //	def v: String	// エラー : valをdefでオーバーライトできない

@@ -1,4 +1,4 @@
-package scalableProgramming.chapter20
+package scala.Abstractmembers
 
 /** アメリカの通貨ブジェクト */
 object US extends CurrencyZone {

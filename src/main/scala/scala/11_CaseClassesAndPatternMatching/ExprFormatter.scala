@@ -1,7 +1,7 @@
-package scalableProgramming.chapter15
+package scala.CaseClassesAndPatternMatching
 
-import scalableProgramming.chapter10.Element
-import scalableProgramming.chapter10.Element.elem
+import scala.CompositionAndInheritance.Element
+import scala.CompositionAndInheritance.Element.elem
 
 /**
  * 数式整形ライブラリー
