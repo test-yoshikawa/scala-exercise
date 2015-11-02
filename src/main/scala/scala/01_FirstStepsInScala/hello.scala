@@ -1,4 +1,4 @@
-package scalableProgramming.chapter02
+package scala.FirstStepsInScala
 
 /**
  * @author Yuki Yoshikawa

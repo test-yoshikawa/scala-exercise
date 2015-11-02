@@ -1,4 +1,4 @@
-package scalableProgramming.chapter03
+package scala.NextStepsInScala
 
 /**
  * @author Yuki Yoshikawa

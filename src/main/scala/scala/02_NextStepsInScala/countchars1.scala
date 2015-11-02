@@ -1,4 +1,4 @@
-package scalableProgramming.chapter03
+package scala.NextStepsInScala
 
 import scala.io.Source
 

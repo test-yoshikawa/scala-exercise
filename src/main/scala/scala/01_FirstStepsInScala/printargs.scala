@@ -1,17 +1,14 @@
-package scalableProgramming.chapter02
+package scala.FirstStepsInScala
 
 /**
  * @author Yuki Yoshikawa
  */
-object echoargs {
-
+object printargs {
 	def main(args: Array[String]): Unit = {
 		var i = 0
 		while (i < args.length) {
-			if (i != 0) print(" ")
-			print(args(i))
+			println(args(i))
 			i += 1
 		}
-		println()
 	}
 }
