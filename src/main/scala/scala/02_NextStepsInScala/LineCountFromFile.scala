@@ -3,12 +3,15 @@ package scala.NextStepsInScala
 import scala.io.Source
 
 /**
- * @author Yuki Yoshikawa
+ * ファイルから行を読み出す
+ * Windowsでの実行の場合はsbt/sbtconfig.txtに「-Dfile.encoding=UTF-8」を追加
+ * ⇒実行は成功するがコンソールは文字化けする
  */
-object fileIOSample {
+object LineCountFromFile {
 
 	def main(args: Array[String]): Unit = {
-		val filename = "C:\\pleiades\\workspace\\scala-excercise\\src\\scalableProgramming\\chapter03\\countchars1.scala"
+		// val filename = "C:\\pleiades\\workspace\\scala-excercise\\src\\scalableProgramming\\chapter03\\countchars1.scala"
+		val filename = "./src/main/scala/scala/02_NextStepsInScala/LineCountFromFile.scala"
 		for (line <- Source.fromFile(filename).getLines()) {
 			println(line.length + " " + line)
 		}

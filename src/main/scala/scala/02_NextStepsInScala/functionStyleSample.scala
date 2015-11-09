@@ -1,9 +1,9 @@
 package scala.NextStepsInScala
 
 /**
- * @author Yuki Yoshikawa
+ * 関数型スタイル　サンプル
  */
-object functionStyleSample {
+object FunctionStyleSample {
 
 	def main(args: Array[String]):Unit = {
 		// 命令型のスタイル

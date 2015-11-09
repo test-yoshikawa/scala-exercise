@@ -1,9 +1,9 @@
 package scala.NextStepsInScala
 
 /**
- * @author Yuki Yoshikawa
+ * Listの操作サンプル
  */
-object listSample {
+object ListSample {
 	def main(args: Array[String]): Unit = {
 		// Listの初期化
 		val oneTwo = List(1, 2)

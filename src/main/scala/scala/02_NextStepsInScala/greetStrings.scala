@@ -1,9 +1,9 @@
 package scala.NextStepsInScala
 
 /**
- * @author Yuki Yoshikawa
+ * 配列の操作
  */
-object greetStrings {
+object GreetStrings {
 	def main(args: Array[String]): Unit = {
 		val greetStrings = new Array[String](3)		// 作成・初期化する方法として推奨できない
 		val numNames = Array("zero", "one", "two")	// 普段は←を使用するらしい

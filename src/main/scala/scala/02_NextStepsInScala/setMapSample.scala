@@ -1,9 +1,9 @@
 package scala.NextStepsInScala
 
 /**
- * @author Yuki Yoshikawa
+ * Set と Map　サンプル
  */
-object setMapSample {
+object SetMapSample {
 
 	def main(args: Array[String]): Unit = {
 		// ミュータブル(変更可能)な集合
