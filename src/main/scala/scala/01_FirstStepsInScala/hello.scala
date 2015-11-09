@@ -1,9 +1,9 @@
 package scala.FirstStepsInScala
 
 /**
- * @author Yuki Yoshikawa
+ * Hello　World!
  */
-object hello {
+object Hello {
 
 	def main(args: Array[String]): Unit = {
 		println("Hello, world, from a script")

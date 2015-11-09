@@ -1,9 +1,9 @@
 package scala.FirstStepsInScala
 
 /**
- * @author Yuki Yoshikawa
+ * コマンドライン引数のwhileによる出力（改行なし）
  */
-object echoargs {
+object EchoArgs {
 
 	def main(args: Array[String]): Unit = {
 		var i = 0
