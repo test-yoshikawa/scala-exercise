@@ -5,7 +5,6 @@ import scala.collection.mutable.Map
 /**
  * クラス（同名のオブジェクトが存在する場合は「コンパニオンオブジェクト」と呼ぶ）
  *
- * @author Yuki Yoshikawa
  */
 class ChecksumAccumlator {
 	private var sum = 0	// アクセス修飾子を指定しなければpublicになる
