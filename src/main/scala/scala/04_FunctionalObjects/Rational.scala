@@ -1,22 +1,41 @@
 package scala.FunctionalObjects
 
 /**
- * @author Yuki Yoshikawa
+ * 有理数（Rational Number）クラス
  */
 class Rational(n: Int, d: Int) {
-	// 事前条件falseの場合はIllegalArgumentExceptionをスローする
-	// これより上の処理は実行される
-	require(d != 0)
-	println("Constructor " + n + "/" + d)
-
+	// 事前条件( require(...) )falseの場合はIllegalArgumentExceptionをスローする
+	require(d != 0)	// これより上の処理は実行される
 	private val g = gcd(n.abs, d.abs)
 	val number: Int = n / g
 	val denom: Int = d / g
-
 	def this(n: Int) = this(n, 1) // 補助コンストラクタ
 
 	override def toString = number + "/" + denom
 
+	/**
+	 * 最大公約数を求める
+	 *
+	 */
+	def gcd(a: Int, b: Int): Int =
+		if (b == 0) a else gcd(b, a % b)
+
+	/**
+	 * 引数より小さいかどうか
+	 *
+	 */
+	def lessThan(that: Rational) =
+		this.number * that.denom < that.number * this.denom
+
+	/**
+	 * 引数より大きいかどうか判定する
+	 */
+	def max(that: Rational) =
+		if (this.lessThan(that)) that else this
+
+	/**
+	 * 分数の加算
+	 */
 	def add(that: Rational): Rational =
 		new Rational(number * that.denom + that.number + denom, denom * that.denom)
 
@@ -40,21 +59,4 @@ class Rational(n: Int, d: Int) {
 
 	def / (that: Rational): Rational =
 		new Rational(number * that.denom, denom * that.number)
-
-	/**
-	 * 引数のRationalより小さいかどうか
-	 *
-	 */
-	def lessThan(that: Rational) =
-		this.number * that.denom < that.number * this.denom
-
-	def max(that: Rational) =
-		if (this.lessThan(that)) that else this
-
-	/**
-	 * 最大公約数を求める
-	 *
-	 */
-	def gcd(a: Int, b: Int): Int =
-		if (b == 0) a else gcd(b, a % b)
 }
