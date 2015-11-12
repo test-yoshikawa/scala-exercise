@@ -1,9 +1,9 @@
 package scala.FunctionsAndClosures
 
 /**
- * @author Yuki Yoshikawa
+ * 関数型スタイル　サンプル
  */
-object functionStyle {
+object FunctionStyle {
 
 	def main(args: Array[String]) {
 		// 関数リテラルの例
@@ -15,7 +15,7 @@ object functionStyle {
 		println(increase(10))
 
 		// 関数リテラルの短縮形
-		println("==== 関数リテラルの短縮形 ====")
+		println("\n==== 関数リテラルの短縮形 ====")
 		val someNumbers = List(-11, -10, -5, 0, 5, 10)
 		someNumbers.filter((x: Int) => x > 0)	// 通常
 		someNumbers.filter((x) => x > 0)		// パラメータの型は短縮できる
@@ -23,20 +23,22 @@ object functionStyle {
 		println(filteredList1)
 
 		// プレースホルダー構文
-		println("==== プレースホルダー構文 ====")
+		println("\n==== プレースホルダー構文 ====")
 		val filteredList2 = someNumbers.filter(_ > 0)
 		println(filteredList2)
 		someNumbers.foreach(println _)
+		val f = (_: Int) + (_: Int)
+		println(f(10, 999))
 
 		// 部分適用された関数
-		println("==== 部分適用された関数 ====")
+		println("\n==== 部分適用された関数 ====")
 		val a = sum _
 		println(a(1, 2, 3))
 		val b = sum(1, _:Int, 3)
 		println(b(4))
 
 		// クロージャー
-		println("==== クロージャー ====")
+		println("\n==== クロージャー ====")
 		var more = 4
 		// クロージャー（自由変数を含む関数オブジェクト。x:束縛変数, more:自由変数）
 		val addMore = (x: Int) => x + more
@@ -51,7 +53,7 @@ object functionStyle {
 
 		// 関数呼び出しの特殊な形態
 		// 連続パラメータ
-		println("==== 連続パラメータ ====")
+		println("\n==== 連続パラメータ ====")
 		echo()
 		echo("one")
 		echo("hello ", "world!")
@@ -60,8 +62,10 @@ object functionStyle {
 		println("==== 名前付き引数 ====")
 		println(sum(c = 1, b = 2, a = 4))
 
-
-
+		println("\n==== パラメータのデフォルト値 ====")
+		printTime();
+		printTime(out = Console.err)
+		printTime(divisor = 1000)
 
 	}
 
@@ -75,6 +79,12 @@ object functionStyle {
 	 */
 	def makeIncreaser(more: Int) = (x: Int) => x + more
 
+	/**
+	 * 引数の合計
+	 */
 	def sum(a: Int, b:Int, c:Int) = a + b + c
 
+	def printTime(out: java.io.PrintStream = Console.out, divisor: Int = 1) = {
+		out.println("time = " + System.currentTimeMillis() / divisor)
+	}
 }

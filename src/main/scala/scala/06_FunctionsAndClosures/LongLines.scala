@@ -3,10 +3,13 @@ package scala.FunctionsAndClosures
 import scala.io.Source
 
 /**
- * @author Yuki Yoshikawa
+ * ファイルの行に関するオブジェクト
  */
 object LongLines {
 
+	/**
+	 * 指定された行の長さより長い行を出力する
+	 */
 	def processLines(filename: String, width: Int) {
 		def pricessLine(line: String) {
 			if (line.length > width) println(filename + ": " + line.trim)
