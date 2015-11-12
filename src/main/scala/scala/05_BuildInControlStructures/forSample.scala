@@ -1,9 +1,9 @@
 package scala.BuildInControlStructures
 
 /**
- * @author Yuki Yoshikawa
+ * For文　サンプル
  */
-object forSample {
+object ForSample {
 
 	def main(args: Array[String]): Unit = {
 
@@ -16,7 +16,7 @@ object forSample {
 
 		println()
 		println("==== for filter ====")
-		val filesHere = (new java.io.File(".\\src\\scalableProgramming\\chapter07")).listFiles
+		val filesHere = (new java.io.File(".\\src\\main\\scala\\scala\\05_BuildInControlStructures")).listFiles
 		for(file <- filesHere if file.getName.endsWith(".scala"))
 			println(file)
 

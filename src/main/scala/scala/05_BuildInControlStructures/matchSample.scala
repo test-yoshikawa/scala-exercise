@@ -1,9 +1,9 @@
 package scala.BuildInControlStructures
 
 /**
- * @author Yuki Yoshikawa
+ * Match式　サンプル
  */
-object matchSample {
+object MatchSample {
 
 	def main(args: Array[String]): Unit = {
 		val firstArgs = if (args.length > 0) args(0) else ""

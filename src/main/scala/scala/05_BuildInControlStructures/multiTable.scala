@@ -1,13 +1,14 @@
 package scala.BuildInControlStructures
 
 /**
- * @author Yuki Yoshikawa
+ * 掛け算テーブル表示
  */
-object multiTable {
+object MultiTable {
 
 	def main(args: Array[String]): Unit = {
 		val table = multiTable()
 		table.foreach(print)
+		println()
 	}
 
 	/**
