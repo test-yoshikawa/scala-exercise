@@ -1,4 +1,4 @@
-package scala.NextStepsInScala
+package NextStepsInScala
 
 /**
  * Set と Map　サンプル
@@ -19,7 +19,7 @@ object SetMapSample {
 		println(movieSet)
 
 		// イミュータブルなマップ
-		val romanNumeral = Map(1 -> "Ⅰ", 2 -> "Ⅱ", 3 -> "Ⅲ", 4 -> "Ⅳ", 5 -> "Ⅴ")
+		val romanNumeral = Map(1 -> "one", 2 -> "two", 3 -> "three", 4 -> "four", 5 -> "five")
 		println(romanNumeral)
 
 		// ミュータブルなマップ(importする必要あり)

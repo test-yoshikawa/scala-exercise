@@ -1,4 +1,4 @@
-package scala.NextStepsInScala
+package NextStepsInScala
 
 /**
  * Listの操作サンプル

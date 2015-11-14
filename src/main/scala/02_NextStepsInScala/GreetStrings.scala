@@ -1,4 +1,4 @@
-package scala.NextStepsInScala
+package NextStepsInScala
 
 /**
  * 配列の操作

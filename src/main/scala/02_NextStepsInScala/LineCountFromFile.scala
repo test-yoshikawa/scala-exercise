@@ -1,4 +1,4 @@
-package scala.NextStepsInScala
+package NextStepsInScala
 
 import scala.io.Source
 
@@ -10,8 +10,7 @@ import scala.io.Source
 object LineCountFromFile {
 
 	def main(args: Array[String]): Unit = {
-		// val filename = "C:\\pleiades\\workspace\\scala-excercise\\src\\scalableProgramming\\chapter03\\countchars1.scala"
-		val filename = "./src/main/scala/scala/02_NextStepsInScala/LineCountFromFile.scala"
+		val filename = "./src/main/scala/02_NextStepsInScala/LineCountFromFile.scala"
 		for (line <- Source.fromFile(filename).getLines()) {
 			println(line.length + " " + line)
 		}

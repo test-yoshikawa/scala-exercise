@@ -4,11 +4,13 @@ package FirstStepsInScala
  * コマンドライン引数のForとForeachによる出力
  */
 object ForArgs {
+
 	def main(args: Array[String]): Unit  = {
 		println("---- for (arg <- args) println(arg) ----")
 		for (arg <- args) println(arg)
 		println()
 
+		// 関数型スタイル
 		println("---- args.foreach(arg => println(arg)) ----")
 		args.foreach(arg => println(arg))
 		println()

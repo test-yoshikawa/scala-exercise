@@ -1,4 +1,4 @@
-package scala.ClassesAndObjects
+package ClassesAndObjects
 
 /**
  * クラスオブジェクト実行用
