@@ -4,6 +4,7 @@ package NextStepsInScala
  * Listの操作サンプル
  */
 object ListSample {
+
 	def main(args: Array[String]): Unit = {
 		// Listの初期化
 		val oneTwo = List(1, 2)

@@ -6,14 +6,13 @@ package NextStepsInScala
 object SetMapSample {
 
 	def main(args: Array[String]): Unit = {
-		// ミュータブル(変更可能)な集合
+		// イミュータブルな集合
 		var jetSet = Set("Boeing", "Airbus")
-		jetSet += "Lear"
+		jetSet += "Lear"	// val変数の場合は実行エラー
 		println(jetSet.contains("lear"))
 
-		// イミュータブル(変更不可)な集合(importする必要あり)
+		// ミュータブルな集合(importする必要あり)
 		import scala.collection.mutable.Set
-		// var movieSet = Set("Hitch", "Poltergeist") // コンパイルエラー
 		val movieSet = Set("Hitch", "Poltergeist")
 		movieSet += "Shrek"
 		println(movieSet)

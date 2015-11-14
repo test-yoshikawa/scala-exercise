@@ -17,7 +17,7 @@ object LineCountFromFile {
 		println()
 		println()
 
-		val lines = Source.fromFile(filename).getLines().toList
+		val lines = Source.fromFile(filename).getLines().toList	// getLines()はイテレーターを返すのでListに変換する必要がある
 		// 各行の最大文字数を取得する
 		var longestLine = lines.reduceLeft((a, b) => if (a.length > b.length) a else b)
 		// longestLineの文字数を取得する

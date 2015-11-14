@@ -7,15 +7,15 @@ object FunctionStyleSample {
 
 	def main(args: Array[String]):Unit = {
 		// 命令型のスタイル
-		println("命令型で出力")
+		println("命令型スタイルで出力")
 		printArgs(args)
 
 		// 関数的なスタイル
-		println("\n関数型で出力：副作用（標準出力）あり")
+		println("\n関数型スタイルで出力：副作用（コンソール出力）あり")
 		printArgsFunctionStyle1(args)
 
 		// 関数型のスタイル
-		println("\n関数型で出力：副作用なし")
+		println("\n関数型スタイルで出力：副作用なし")
 		val res = printArgsFunctionStyle2(args)
 		println(res)
 		assert(res == "yo, shi, ka, wa, yu, u, ki")
