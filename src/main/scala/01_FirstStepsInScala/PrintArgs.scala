@@ -1,4 +1,4 @@
-package scala.FirstStepsInScala
+package FirstStepsInScala
 
 /**
  * コマンドライン引数のwhileによる出力（改行あり）
