@@ -3,7 +3,8 @@ package ClassesAndObjects
 import scala.collection.mutable.Map
 
 /**
- * クラス（同名のオブジェクトが存在する場合は「コンパニオンオブジェクト」と呼ぶ）
+ * クラス
+ * ※同名のオブジェクトが存在する場合は「コンパニオンクラス」と呼ぶ
  *
  */
 class ChecksumAccumlator {
@@ -15,9 +16,10 @@ class ChecksumAccumlator {
 }
 
 /**
- * シングルトンオブジェクト（同じソースファイル内に定義する）
+ * シングルトンオブジェクト
+ * ※同名のクラスが存在する場合は「コンパニオンオブジェクト」と呼ぶ（互いに非公開メンバーにアクセスできる）
+ * ※同じソースファイル内に定義する
  *
- * @author Yuki Yoshikawa
  */
 object ChecksumAccumlator {
 	private val cache = Map[String, Int]()
