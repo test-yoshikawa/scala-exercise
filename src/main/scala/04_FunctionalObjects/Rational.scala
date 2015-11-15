@@ -1,4 +1,4 @@
-package scala.FunctionalObjects
+package FunctionalObjects
 
 /**
  * 有理数（Rational Number）クラス
@@ -33,9 +33,9 @@ class Rational(n: Int, d: Int) {
 	def max(that: Rational) =
 		if (this.lessThan(that)) that else this
 
-	/**
-	 * 分数の加算
-	 */
+	/*********************************
+	 * 分数の演算
+	 *********************************/
 	def add(that: Rational): Rational =
 		new Rational(number * that.denom + that.number + denom, denom * that.denom)
 

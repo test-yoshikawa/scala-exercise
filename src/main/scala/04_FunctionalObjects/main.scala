@@ -1,4 +1,4 @@
-package scala.FunctionalObjects
+package FunctionalObjects
 
 /**
  * 有理数　実行用サンプル
@@ -34,19 +34,19 @@ object Main {
 		println()
 		println("-- 約分 --")
 		val three = new Rational(3)
-		println(three)
-		println(new Rational(66, 42))
+		println("3 / 1 = " + three)
+		println("66 / 42 = " + new Rational(66, 42))
 
 		println()
 		println("-- 加算(+メソッド) --")
-		println(oneHalf.+(twoThirds))
+		println("1/2 + 2/3 = " +  oneHalf.+(twoThirds))
 		println()
 		println("-- 乗算 --")
-		println(oneHalf.*(twoThirds))
+		println("1/2 * 2/3 = " + oneHalf.*(twoThirds))
 		println()
 		println("-- 乗算 --")
 		// 暗黙の型変換の設定
 		implicit def intToRational(x: Int) = new Rational(x)
-		println(2 * oneHalf)
+		println("2 * 1/2 = " +  2 * oneHalf)
 	}
 }
