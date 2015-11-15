@@ -1,4 +1,4 @@
-package scala.BuildInControlStructures
+package BuildInControlStructures
 
 /**
  * 掛け算テーブル表示

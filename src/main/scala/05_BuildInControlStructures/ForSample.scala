@@ -1,7 +1,9 @@
-package scala.BuildInControlStructures
+package BuildInControlStructures
 
 /**
  * For文　サンプル
+ * Windowsでの実行の場合はsbt/sbtconfig.txtに「-Dfile.encoding=UTF-8」を追加
+ * ⇒実行は成功するがコンソールは文字化けする
  */
 object ForSample {
 
@@ -16,12 +18,12 @@ object ForSample {
 
 		println()
 		println("==== for filter ====")
-		val filesHere = (new java.io.File(".\\src\\main\\scala\\scala\\05_BuildInControlStructures")).listFiles
+		val filesHere = (new java.io.File(".\\src\\main\\scala\\05_BuildInControlStructures")).listFiles
 		for(file <- filesHere if file.getName.endsWith(".scala"))
 			println(file)
 
 		println()
-		println("==== for 入れ子 ====")
+		println("==== for nesting ====")
 		grep(filesHere, ".*gcd.*")
 
 		println()

@@ -1,4 +1,4 @@
-package scala.BuildInControlStructures
+package BuildInControlStructures
 
 /**
  * Match式　サンプル
