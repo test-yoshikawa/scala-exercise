@@ -17,6 +17,11 @@ object ForSample {
 		for (i <- 1 until 4) println("Iteration " + i)
 
 		println()
+		println("==== for (i <- 1 until 4)  yield i ====") // return list
+		val nums = for (i <- 1 until 4)  yield i
+		println(nums.toList)
+
+		println()
 		println("==== for filter ====")
 		val filesHere = (new java.io.File(".\\src\\main\\scala\\05_BuildInControlStructures")).listFiles
 		for(file <- filesHere if file.getName.endsWith(".scala"))
