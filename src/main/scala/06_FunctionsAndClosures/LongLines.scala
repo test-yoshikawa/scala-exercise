@@ -1,4 +1,4 @@
-package scala.FunctionsAndClosures
+package FunctionsAndClosures
 
 import scala.io.Source
 

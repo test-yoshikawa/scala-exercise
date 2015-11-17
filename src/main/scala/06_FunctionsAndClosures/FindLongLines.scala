@@ -1,7 +1,12 @@
-package scala.FunctionsAndClosures
+package FunctionsAndClosures
 
 /**
- * @author Yuki Yoshikawa
+ * <一般的な関数定義方法>
+ * ファイルの内容を取得して、指定した行より長い行を出力する
+ * Windowsでの実行の場合はsbt/sbtconfig.txtに「-Dfile.encoding=UTF-8」を追加
+ * ⇒実行は成功するがコンソールは文字化けする
+ * 【実行例】
+ * sbt "run-main FunctionsAndClosures.FindLongLines 10 ./src/main/scala/05_BuildInControlStructures/MatchSample.scala"
  */
 object FindLongLines {
 
