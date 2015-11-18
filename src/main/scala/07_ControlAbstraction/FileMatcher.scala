@@ -1,13 +1,13 @@
-package scala.ControlAbstraction
+package ControlAbstraction
 
 /**
  * 制御の抽象化
  *   ファイル操作系のAPI
  *
- * @author Yuki Yoshikawa
  */
 object FileMatcher {
-	private def filesHere = (new java.io.File(".\\src\\scalableProgramming\\chapter09")).listFiles
+
+	private def filesHere = (new java.io.File("./src/main/scala/07_ControlAbstraction")).listFiles
 
 	/**
 	 * ファイル名の後方一致検索
@@ -54,5 +54,18 @@ object FileMatcher {
 	 */
 	def filesMatchingClosure(matcher: String => Boolean) = {
 		for (file <- filesHere; if matcher(file.getName)) yield file
+	}
+
+	/**
+	 * ファイル書き込み（カリー化を利用）
+	 */
+	def withPrintWriter(file: java.io.File)(op: java.io.PrintWriter => Unit) {
+		val writer = new java.io.PrintWriter(file)
+		try {
+			op(writer)
+			println("created file : " + file)
+		} finally {
+			writer.close();
+		}
 	}
 }

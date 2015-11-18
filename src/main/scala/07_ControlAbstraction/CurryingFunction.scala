@@ -1,9 +1,9 @@
-package scala.ControlAbstraction
+package ControlAbstraction
 
 /**
- * @author Yuki Yoshikawa
+ * カリー化された関数
  */
-object CurryingSample {
+object CurryingFunction {
 
 	def main(args: Array[String]) = {
 		val onePlus = curriedSum(1)_

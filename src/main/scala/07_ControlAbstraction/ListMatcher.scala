@@ -1,7 +1,7 @@
-package scala.ControlAbstraction
+package ControlAbstraction
 
 /**
- * @author Yuki Yoshikawa
+ * List パターンマッチ
  */
 object ListMatcher {
 
