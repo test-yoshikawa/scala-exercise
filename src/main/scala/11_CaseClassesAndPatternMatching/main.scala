@@ -1,12 +1,12 @@
-package scala.CaseClassesAndPatternMatching
+package CaseClassesAndPatternMatching
 
-import scala.CaseClassesAndPatternMatching.Expr._
+import CaseClassesAndPatternMatching.Expr._
 
 
 /**
  * @author Yuki Yoshikawa
  */
-object main {
+object Main {
 
 	def main(args: Array[String]) {
 

@@ -1,8 +1,7 @@
-package scala.CompositionAndInheritance
+package CompositionAndInheritance
 
-import Element.elem
 /**
- * @author Yuki Yoshikawa
+ * レイアウト要素を表現するオブジェクト
  */
 object Element {
 	// 非公開クラスの実装の隠ぺい
@@ -24,6 +23,11 @@ object Element {
 	def elem(ch: Char, width: Int, height: Int): Element = new UniformElementHidden(ch, width, height)
 }
 
+
+/**
+ * レイアウト要素を表現する抽象クラス
+ */
+import Element.elem
 abstract class Element {
 	def contents: Array[String]
 

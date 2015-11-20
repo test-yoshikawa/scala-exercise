@@ -1,8 +1,7 @@
-package scala.CompositionAndInheritance
+package CompositionAndInheritance
 
-import ElementOld.elem
 /**
- * @author Yuki Yoshikawa
+ * レイアウト要素を表現するオブジェクト
  */
 object ElementOld {
 	// ファクトリーメソッドの実装
@@ -11,11 +10,14 @@ object ElementOld {
 	def elem(ch: Char, width: Int, height: Int): ElementOld = new UniformElement(ch, width, height)
 }
 
-
+/**
+ * レイアウト要素を表現する抽象クラス
+ */
+import ElementOld.elem
 abstract class ElementOld {
 	def contents: Array[String]
 
-	// height、widthはdefで定義手もよいはvalのほうがわずかだが速い
+	// height、widthはdefで定義よりかはvalのほうがわずかだが速い
 	// クラスが初期化されるときに先に計算されているため
 	val height = contents.length
 	val width = if (height == 0) 0 else contents(0).length

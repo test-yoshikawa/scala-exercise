@@ -1,9 +1,9 @@
-package scala.CompositionAndInheritance
+package CompositionAndInheritance
 
 import Element.elem
 
 /**
- * @author Yuki Yoshikawa
+ * 渦巻きを描くオブジェクト
  */
 object Spiral {
 	var space = elem(" ")

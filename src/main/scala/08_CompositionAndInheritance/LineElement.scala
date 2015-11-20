@@ -1,9 +1,9 @@
-package scala.CompositionAndInheritance
+package CompositionAndInheritance
 
 /**
- * @author Yuki Yoshikawa
+ * ArrayElementを拡張
  */
-class LineElement(s: String) extends ArrayElement(Array(s)) {
+class LineElement(s: String) extends ArrayElement(Array(s)) { // スーパーコンストラクタの呼び出し
 	override val width = s.length
 
 	override val height = 1

@@ -1,4 +1,4 @@
-package scala.CompositionAndInheritance
+package CompositionAndInheritance
 
 /**
  * @author Yuki Yoshikawa

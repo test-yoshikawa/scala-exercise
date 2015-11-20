@@ -1,4 +1,4 @@
-package scala.CaseClassesAndPatternMatching
+package CaseClassesAndPatternMatching
 
 /**
  * @author Yuki Yoshikawa

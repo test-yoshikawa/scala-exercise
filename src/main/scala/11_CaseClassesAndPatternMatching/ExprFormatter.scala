@@ -1,7 +1,7 @@
-package scala.CaseClassesAndPatternMatching
+package CaseClassesAndPatternMatching
 
-import scala.CompositionAndInheritance.Element
-import scala.CompositionAndInheritance.Element.elem
+import CompositionAndInheritance.Element
+import CompositionAndInheritance.Element.elem
 
 /**
  * 数式整形ライブラリー

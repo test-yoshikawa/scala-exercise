@@ -1,4 +1,4 @@
-package scala.CaseClassesAndPatternMatching
+package CaseClassesAndPatternMatching
 
 import javafx.application.Application
 
