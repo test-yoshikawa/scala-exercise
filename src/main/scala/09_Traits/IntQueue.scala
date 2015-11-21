@@ -1,7 +1,7 @@
-package scala.Traits
+package Traits
 
 /**
- * @author Yuki Yoshikawa
+ * 数値型Queueの抽象クラス
  */
 abstract class IntQueue {
 	def get(): Int

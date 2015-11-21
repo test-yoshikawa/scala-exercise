@@ -1,6 +1,6 @@
-package scala.Traits
+package Traits
 
 /**
- * @author Yuki Yoshikawa
+ * 数値型のQueueと要素を2倍にするTraitをミックスインしたQueue
  */
 class MyQueue extends BasicIntQueue with Doubling

@@ -1,6 +1,6 @@
-package scala.Traits
+package Traits
 
 /**
- * @author Yuki Yoshikawa
+ * 足がついている動物Trait
  */
 trait HasLegs

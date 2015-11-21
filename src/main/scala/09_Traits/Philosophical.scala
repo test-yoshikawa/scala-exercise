@@ -1,7 +1,7 @@
-package scala.Traits
+package Traits
 
 /**
- * @author Yuki Yoshikawa
+ * トレイト
  */
 trait Philosophical {
 	def philosophize() {

@@ -1,7 +1,7 @@
-package scala.Traits
+package Traits
 
 /**
- * @author Yuki Yoshikawa
+ * Filter(=負の数値は除く)が設定されたTrait
  */
 trait Filtering extends IntQueue {
 	abstract override def put(x: Int) {

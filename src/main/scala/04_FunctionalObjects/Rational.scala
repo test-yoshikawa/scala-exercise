@@ -3,7 +3,7 @@ package FunctionalObjects
 /**
  * 有理数（Rational Number）クラス
  */
-class Rational(n: Int, d: Int) {
+class Rational(n: Int, d: Int) extends Ordered[Rational] {
 	// 事前条件( require(...) )falseの場合はIllegalArgumentExceptionをスローする
 	require(d != 0)	// これより上の処理は実行される
 	private val g = gcd(n.abs, d.abs)
@@ -59,4 +59,10 @@ class Rational(n: Int, d: Int) {
 
 	def / (that: Rational): Rational =
 		new Rational(number * that.denom, denom * that.number)
+
+	/*********************************
+	 * 分数の比較
+	 *********************************/
+	// Orderedトレイトをミックスインすれば比較演算子（<, >, <= >=）の定義はcompere メソッドで対応できる
+	def compare(that: Rational) = (this.number * that.denom) - (that.number * this.denom)
 }

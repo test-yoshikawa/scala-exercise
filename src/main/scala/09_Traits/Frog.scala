@@ -1,7 +1,7 @@
-package scala.Traits
+package Traits
 
 /**
- * @author Yuki Yoshikawa
+ * カエル
  */
 class Frog extends Animal with Philosophical with HasLegs {
 	override def toString = "green"
