@@ -1,12 +1,10 @@
-package scala.PackagesAndImports
+package PackagesAndImports
 
 /**
  * インポートのサンプル
  * ・importは任意の場所に書ける
  * ・パッケージのほか、オブジェクト（シングルトンでも通常のものでも）も参照できる
  * ・インポートされたメンバーの一部の名前を変えたり、隠したりすることができる
- *
- * @author Yuki Yoshikawa
  */
 abstract class Fruit(val name: String, val color: String)
 

@@ -1,4 +1,4 @@
-package scala.PackagesAndImports {
+package PackagesAndImports {
 	package navigation {
 		// chapter13.navigationパッケージ
 		class Navigator {

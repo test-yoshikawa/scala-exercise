@@ -1,9 +1,9 @@
-package scala.PackagesAndImports
+package PackagesAndImports
 
 /**
- * @author Yuki Yoshikawa
+ * パッケージオブジェクト　サンプル実行用
  */
-object main {
+object Main {
 
 	def main(args: Array[String]) {
 		//========================================
