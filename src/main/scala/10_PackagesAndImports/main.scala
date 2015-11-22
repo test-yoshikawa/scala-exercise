@@ -20,5 +20,21 @@ object Main {
 		// メンバーの一部の名前を変更できる
 		import Fruits.{Apple => McIntosh}
 		val apple = McIntosh
+		//========================================
+		// パッケージオブジェクト　サンプル
+		//========================================
+
+		//========================================
+		// 可視性とコンパニオンオブジェクト　サンプル
+		//========================================
+		val rocket = new Rocket()
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
+		Rocket.chooseStrategy(rocket)
 	}
 }
