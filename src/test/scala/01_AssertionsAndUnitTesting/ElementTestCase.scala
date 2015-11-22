@@ -1,14 +1,12 @@
-package scala.AssertionsAndUnitTesting
+package AssertionsAndUnitTesting
 
 import junit.framework.TestCase
 import junit.framework.Assert.assertEquals
 import junit.framework.Assert.fail
-import scala.CompositionAndInheritance.Element.elem
+import CompositionAndInheritance.Element.elem
 
 /**
- * JUnitを使用したテストクラス
- *
- * @author Yuki Yoshikawa
+ * JUnitを使用したユニットテスト
  */
 class ElementTestCase extends TestCase {
 

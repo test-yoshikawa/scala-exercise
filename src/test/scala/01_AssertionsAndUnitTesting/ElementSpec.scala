@@ -1,13 +1,12 @@
-package scala.AssertionsAndUnitTesting
+package AssertionsAndUnitTesting
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
-import scala.CompositionAndInheritance.Element.elem
+import CompositionAndInheritance.Element.elem
 
 /**
  * ふるまい駆動開発（behavior-driven developmennt:BDD）のテストスタイル
  *
- * @author Yuki Yoshikawa
  */
 class ElementSpec extends FlatSpec with ShouldMatchers {
 	"A UniformElement" should "have a width equal to the passed value" in {

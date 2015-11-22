@@ -1,12 +1,11 @@
-package scala.AssertionsAndUnitTesting
+package AssertionsAndUnitTesting
 
 import org.scalatest.junit.JUnit3Suite
-import scala.CompositionAndInheritance.Element.elem
+import CompositionAndInheritance.Element.elem
 
 /**
  * JUnit3Suiteを使用したJUnitテストクラス
  *
- * @author Yuki Yoshikawa
  */
 class ElementJUnit3Suite extends JUnit3Suite {
 

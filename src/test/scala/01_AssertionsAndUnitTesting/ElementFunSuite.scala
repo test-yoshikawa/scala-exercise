@@ -1,10 +1,10 @@
-package scala.AssertionsAndUnitTesting
+package AssertionsAndUnitTesting
 
 import org.scalatest.FunSuite
-import scala.CompositionAndInheritance.Element.elem
+import CompositionAndInheritance.Element.elem
 
 /**
- * @author Yuki Yoshikawa
+ * ScalaTestを用いたユニットテスト
  */
 class ElementFunSuite extends FunSuite {
 
