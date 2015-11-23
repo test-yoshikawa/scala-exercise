@@ -1,17 +1,18 @@
 package CaseClassesAndPatternMatching
 
 /**
- * @author Yuki Yoshikawa
+ * 変数、数値、単項・二項演算から構成される算術式抽象クラス
  */
 sealed abstract class Expr
-	// ケースクラス
-	case class Var(name: String) extends Expr
-	case class Number(num: Double) extends Expr
-	case class UnOp(operator: String, arg: Expr) extends Expr
-	case class BinOp(operator: String, left: Expr, right: Expr) extends Expr
+
+// ケースクラス
+case class Var(name: String) extends Expr
+case class Number(num: Double) extends Expr
+case class UnOp(operator: String, arg: Expr) extends Expr
+case class BinOp(operator: String, left: Expr, right: Expr) extends Expr
 
 /**
- * パターンマッチに関するオブジェクト
+ * 算術式を扱うコンパニオンオブジェクト
  */
 object Expr {
 
@@ -50,7 +51,7 @@ object Expr {
 	 */
 	def sequenceFixed(expr: Any) = expr match {
 		case List(0, _, _) => println("found it")
-		case _ =>
+		case _ => println("no match")
 	}
 
 	/**
@@ -58,7 +59,7 @@ object Expr {
 	 */
 	def sequenceVariable(expr: Any) = expr match {
 		case List(0, _*) => println("found it")
-		case _ =>
+		case _ => println("no match")
 	}
 
 	/**
@@ -66,7 +67,7 @@ object Expr {
 	 */
 	def tupleDemo(expr: Any) = expr match {
 		case (a, b, c) => println("matched " + a + ". " + b + ", " + c)
-		case _ =>
+		case _ => println("no match")
 	}
 
 	/**
@@ -104,6 +105,5 @@ object Expr {
 		case UnOp(op, e) => UnOp(op, simplifyAll(e))
 		case BinOp(op, l, r) => BinOp(op, simplifyAll(l), simplifyAll(r))
 		case _ => expr
-
 	}
 }

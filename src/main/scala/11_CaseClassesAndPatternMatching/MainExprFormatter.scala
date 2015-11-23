@@ -3,9 +3,9 @@ package CaseClassesAndPatternMatching
 import javafx.application.Application
 
 /**
- * @author Yuki Yoshikawa
+ * 数式を整形(分数表示など)して表示する
  */
-object Express {
+object MainExprFormatter {
 
 	def main(args: Array[String]) {
 		val f = new ExprFormatter

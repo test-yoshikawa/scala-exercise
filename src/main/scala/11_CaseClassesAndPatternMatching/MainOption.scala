@@ -1,9 +1,9 @@
 package CaseClassesAndPatternMatching
 
 /**
- * @author Yuki Yoshikawa
+ *Option型　サンプル
  */
-object OptionSample {
+object MainOption {
 	def main(args: Array[String]) {
 		// Option型
 		val capitals = Map("France" -> "Paris", "Japan" -> "Tokyo")

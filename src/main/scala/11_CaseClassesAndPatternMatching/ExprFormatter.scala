@@ -4,9 +4,8 @@ import CompositionAndInheritance.Element
 import CompositionAndInheritance.Element.elem
 
 /**
- * 数式整形ライブラリー
+ * 数式を整形(分数表示など)して表示するクラス
  *
- * @author Yuki Yoshikawa
  */
 class ExprFormatter {
 	// 優先順位の昇順でグループにまとめた演算子を格納する
