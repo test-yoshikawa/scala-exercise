@@ -1,4 +1,4 @@
-package scala.TypeParameterization
+package TypeParameterization
 
 trait Queue[T] {
 	def head: T
