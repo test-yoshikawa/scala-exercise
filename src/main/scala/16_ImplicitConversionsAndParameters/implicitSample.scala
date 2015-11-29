@@ -1,9 +1,9 @@
-package scala.ImplicitConversionsAndParameters
+package ImplicitConversionsAndParameters
 
 import Implicit._	// 暗黙の型を利用したい場合はインポートをする
 import JoePrefs._
 
-object implicitSample {
+object ImplicitSample {
 
 	def main(args: Array[String]): Unit = {
 		println("==== implicit sample ====")

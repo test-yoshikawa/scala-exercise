@@ -1,4 +1,4 @@
-package scala.ModularProgrammingUsingObjects
+package ModularProgrammingUsingObjects
 
 /**
  * Foodエンティティークラス

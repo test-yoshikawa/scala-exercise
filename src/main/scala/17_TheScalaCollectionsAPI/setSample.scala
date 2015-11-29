@@ -1,6 +1,6 @@
-package scala.TheScalaCollectionsAPI
+package TheScalaCollectionsAPI
 
-object setSample {
+object SetSample {
 
 	def main(args: Array[String]): Unit = {
 		val set1 = Set("apple", "orange", "peach", "banana")	// immutable

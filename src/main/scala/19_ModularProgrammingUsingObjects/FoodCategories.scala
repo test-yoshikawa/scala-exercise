@@ -1,4 +1,4 @@
-package scala.ModularProgrammingUsingObjects
+package ModularProgrammingUsingObjects
 
 trait FoodCategories {
 	case class FoodCategory(name: String, foods: List[Food])

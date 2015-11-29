@@ -1,4 +1,4 @@
-package scala.ModularProgrammingUsingObjects
+package ModularProgrammingUsingObjects
 
 /**
  * モック実装のブラウザーモジュール

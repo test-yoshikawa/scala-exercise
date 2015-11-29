@@ -1,6 +1,6 @@
-package scala.TheScalaCollectionsAPI
+package TheScalaCollectionsAPI
 
-object mapSample {
+object MapSample {
 
 	def main(args: Array[String]): Unit = {
 		val map1 = Map(1 -> "a", 2-> "b", 3-> "c", 4 ->"d")

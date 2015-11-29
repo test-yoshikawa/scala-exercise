@@ -1,8 +1,8 @@
-package scala.TheScalaCollectionsAPI
+package TheScalaCollectionsAPI
 
 import scala.collection.mutable._
 
-object bufferSample {
+object BufferSample {
 
 	def main(args: Array[String]): Unit = {
 		val buf1 = Buffer(1, 2, 3)

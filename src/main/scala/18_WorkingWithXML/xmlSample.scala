@@ -1,6 +1,6 @@
 package scala.WorkingWithXML
 
-object xmlSample {
+object XmlSample {
 
 	def main(args: Array[String]): Unit = {
 		val therm = new CCTherm()

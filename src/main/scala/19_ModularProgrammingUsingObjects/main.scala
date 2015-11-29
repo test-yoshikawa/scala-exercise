@@ -1,9 +1,9 @@
-package scala.ModularProgrammingUsingObjects
+package ModularProgrammingUsingObjects
 
 /**
  * 処理実行用オブジェクト
  */
-object main {
+object Main {
 	
 	def main(args: Array[String]): Unit = {
 		val apple = SimpleDatabase.foodNamed("Apple").get

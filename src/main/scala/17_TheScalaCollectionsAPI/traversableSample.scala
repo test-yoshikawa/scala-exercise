@@ -1,6 +1,6 @@
-package scala.TheScalaCollectionsAPI
+package TheScalaCollectionsAPI
 
-object traversableSample {
+object TraversableSample {
 
 	def main(args: Array[String]): Unit = {
 		val list1 = List(1, 2, 3, 4, 5)

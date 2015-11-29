@@ -1,9 +1,9 @@
-package scala.ModularProgrammingUsingObjects
+package ModularProgrammingUsingObjects
 
 /**
  * リンゴのレシピを出力するオブジェクト
  */
-object gotApple {
+object GotApple {
 	
 	def main(args: Array[String]): Unit = {
 		val db: Database =

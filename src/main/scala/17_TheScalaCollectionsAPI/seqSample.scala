@@ -1,6 +1,6 @@
-package scala.TheScalaCollectionsAPI
+package TheScalaCollectionsAPI
 
-object seqSample {
+object SeqSample {
 
 	def main(args: Array[String]): Unit = {
 		val seq1 = Seq(1, 2, 3, 4, 5)

@@ -1,4 +1,4 @@
-package scala.ImplicitConversionsAndParameters
+package ImplicitConversionsAndParameters
 
 object JoePrefs {
 	implicit val prompt = new PreferredPrompt("Yes, master>")
