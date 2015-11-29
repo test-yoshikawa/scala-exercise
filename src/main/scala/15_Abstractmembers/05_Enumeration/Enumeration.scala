@@ -3,7 +3,7 @@ package AbstractMembers
 /**
  * 列挙型サンプル
  */
- object enumerationDample {
+ object Enumeration {
 
 	 def main(args: Array[String]): Unit = {
 	 	println("==== Color.values ====")

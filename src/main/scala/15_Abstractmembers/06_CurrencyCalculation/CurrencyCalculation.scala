@@ -1,7 +1,7 @@
 package AbstractMembers
 
 /** 通貨計算サンプル */
-object currencySample {
+object CurrencyCalculation {
 
 	def main(args: Array[String]): Unit = {
 		val yen = Japan.Yen from US.Dollar * 100
@@ -17,6 +17,5 @@ object currencySample {
 		println("US.Dollar * 100 + dollar : " + cal1)
 		
 		// val cal2 = US.Dollar + Europe.Europe //コンパイルエラー
-	}
-	
+	}	
 }
