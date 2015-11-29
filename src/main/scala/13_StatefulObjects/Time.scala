@@ -1,7 +1,7 @@
-package scala.StatefulObjects
+package StatefulObjects
 
 /**
- * @author Yuki Yoshikawa
+ * 時間を扱うクラス
  */
 class Time {
 	private[this] var h = 12	// 暗黙的にgetter/setterメソッドが定義されている

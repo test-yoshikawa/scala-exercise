@@ -1,10 +1,9 @@
-package scala.StatefulObjects
+package StatefulObjects
 
 /**
- * ミュータブルな銀行口座クラス
+ * mutableな銀行口座クラス
  * 今までの操作によって影響を受ける⇒ステートフルオブヘクト
  *
- * @author Yuki Yoshikawa
  */
 class BankAccount {
 	private var bal: Int = 0
