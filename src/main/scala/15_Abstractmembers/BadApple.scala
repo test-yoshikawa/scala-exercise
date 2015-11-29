@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 abstract class BadApple extends Fruit {
 

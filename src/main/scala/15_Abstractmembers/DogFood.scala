@@ -1,3 +1,3 @@
-package scala.Abstractmembers
+package AbstractMembers
 
  class DogFood extends Food

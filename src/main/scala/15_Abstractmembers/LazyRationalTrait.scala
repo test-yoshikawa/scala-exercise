@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 trait LazyRationalTrait {
 	val numerArg: Int

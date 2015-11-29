@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 class Cow extends Animal {
 	type SuitableFood = Grass

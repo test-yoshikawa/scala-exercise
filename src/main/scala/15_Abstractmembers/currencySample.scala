@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 /** 通貨計算サンプル */
 object currencySample {

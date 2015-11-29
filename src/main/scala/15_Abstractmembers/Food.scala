@@ -1,5 +1,3 @@
-package scala.Abstractmembers
+package AbstractMembers
 
-class Food {
-  
-}
+class Food

@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 /**
  * 列挙型サンプル(Colorクラス)

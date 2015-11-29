@@ -1,14 +1,13 @@
-package scala.Abstractmembers
+package AbstractMembers
 
-object abstractValSample {
+object InitializeAbstractVal {
 
 	def main(args: Array[String]): Unit = {
 		/***************************
 		 * 抽象valの初期化
 		 ***************************/
-		println("===== 抽象valの初期化 =====")
+		println("===== initialize abstract val =====")
 		val x = 2
-
 
 		// コンストラクタに渡される前にパラメータが評価されるため、numerArg, denomArgは0になる
 		try {
@@ -37,17 +36,16 @@ object abstractValSample {
 		/***************************
 		 * 遅延評価val
 		 ***************************/
-		println()
-		println("===== 遅延評価val =====")
-		println("Demoの初期化")
+		println("\n===== Lazy Evaluation val =====")
+		println("\n< Initialize Demo Class >")
 		println(Demo)
 		println(Demo.x)	// ふつうはDemoの初期化時点でxも初期化されてしまう
-		println()
-		println("LazyDemoの初期化")
+
+		println("\n< Initialize LazyDemo >")
 		println(LazyDemo)
 		println(LazyDemo.x)	// lazy修飾子 : xを参照する時点で初期化させる
 
-		println("遅延評価valによるRationalTraitの初期化")
+		println("\n< Initialize RationalTrait by lazy evaluation val >")
 		val y = 3
 		val result4 = new LazyRationalTrait{
 				val numerArg = 1 * y

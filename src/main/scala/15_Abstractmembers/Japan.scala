@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 /** 日本の通貨オブジェクト */
 object Japan extends CurrencyZone {

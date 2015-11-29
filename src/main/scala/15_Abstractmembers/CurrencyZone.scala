@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 /** 抽象型とファクトリーメソッドをAbstractCurrencyの外にだす */
 abstract class CurrencyZone {

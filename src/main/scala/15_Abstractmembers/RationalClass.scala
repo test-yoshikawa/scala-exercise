@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 class RationalClass(n: Int, d: Int) extends {
 	val numerArg = n

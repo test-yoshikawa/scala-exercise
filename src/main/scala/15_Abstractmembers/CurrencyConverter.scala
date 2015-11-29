@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 /** 通貨の換算レート */
 object CurrencyConverter {

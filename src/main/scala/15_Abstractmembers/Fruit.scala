@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 abstract class Fruit {
 	val v: String	// valueの'v'

@@ -1,6 +1,6 @@
-package scala.Abstractmembers
+package AbstractMembers
 
- object abstractTypeSample {
+ object AbstractType {
 
  	def main(args: Array[String]): Unit = {
  		val cow = new Cow();

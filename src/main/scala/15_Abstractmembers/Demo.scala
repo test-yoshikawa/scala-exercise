@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 /**
  * 遅延評価val デモ

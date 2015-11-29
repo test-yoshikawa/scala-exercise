@@ -1,4 +1,4 @@
-package scala.Abstractmembers
+package AbstractMembers
 
 abstract class Animal {
 	type SuitableFood <: Food
