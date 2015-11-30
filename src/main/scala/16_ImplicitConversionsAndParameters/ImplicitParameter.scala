@@ -1,24 +1,20 @@
 package ImplicitConversionsAndParameters
 
 import Implicit._	// 暗黙の型を利用したい場合はインポートをする
-import JoePrefs._
+import GreeterPrefs._
 
-object ImplicitSample {
+object ImplicitParameter {
 
 	def main(args: Array[String]): Unit = {
-		println("==== implicit sample ====")
-		var x = 20;
-		var result = x * "test";
-		println("x * \"test\" = " + result)
-
 		// 暗黙のパラメータ１
-		println("\n==== implicit parameter sample ====")
+		println("==== implicit parameter sample ====")
 		val bobsPrompt = new PreferredPrompt("relax>")
 		val bobsDrink = new PreferredDrink("cola")
 		Greeter.greet("Bob")(bobsPrompt, bobsDrink)
-		Greeter.greet("Joe")	// 暗黙でJoesPrefsを利用している
+		Greeter.greet("Joe")	// 暗黙でGreeterPrefsを利用している
 
 		// 暗黙のパラメータ２
+		println("\n==== implicit parameter sample 2 ====")
 		println(maxList(List(1, 5, 10, 3)))
 		println(maxList(List(1.5, 5.2, 19.7, 3.14159)))
 		println(maxList(List("one", "two", "three")))
