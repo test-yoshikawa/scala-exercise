@@ -1,4 +1,4 @@
-package scala.WorkingWithXML
+package WorkingWithXML
 
 class CCTherm {
 	val description = "ht dog #5"
@@ -9,12 +9,12 @@ class CCTherm {
 	val condition = 9
 
 	def toXml =
-		<cctherm>
-			<description>{description}</description>
-			<yearMade>{yearMade}</yearMade>
-			<dateObtained>{dateObtained}</dateObtained>
-			<bookPrice>{bookPrice}</bookPrice>
-			<purchasePrice>{purchasePrice}</purchasePrice>
-			<condition>{condition}</condition>
-		</cctherm>
+<cctherm>
+	<description>{description}</description>
+	<yearMade>{yearMade}</yearMade>
+	<dateObtained>{dateObtained}</dateObtained>
+	<bookPrice>{bookPrice}</bookPrice>
+	<purchasePrice>{purchasePrice}</purchasePrice>
+	<condition>{condition}</condition>
+</cctherm>
 }
