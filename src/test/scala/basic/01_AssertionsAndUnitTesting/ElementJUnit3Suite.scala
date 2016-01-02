@@ -1,7 +1,7 @@
-package AssertionsAndUnitTesting
+package basic.AssertionsAndUnitTesting
 
 import org.scalatest.junit.JUnit3Suite
-import CompositionAndInheritance.Element.elem
+import basic.CompositionAndInheritance.Element.elem
 
 /**
  * JUnit3Suiteを使用したJUnitテストクラス
