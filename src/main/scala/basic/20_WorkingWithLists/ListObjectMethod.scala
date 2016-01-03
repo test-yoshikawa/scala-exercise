@@ -1,6 +1,7 @@
 package basic.WorkingWithLists
 
 object ListObjectMethod {
+
 	def main(args: Array[String]) {
 		// 要素からListを作る
 		println("==== Create List by elements: apply ====")

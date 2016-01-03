@@ -5,7 +5,7 @@ package basic.BuildInControlStructures
  */
 object MultiTable {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) = {
 		val table = multiTable()
 		table.foreach(print)
 		println()

@@ -19,11 +19,10 @@ object Main {
 		filesContaining.toList.foreach(println _)
 
 		println("\n==== File create ====")
-		val file = new java.io.File("./src/main/scala/07_ControlAbstraction/data.txt")
+		val file = new java.io.File("./src/main/scala/basic/07_ControlAbstraction/data.txt")
 		FileMatcher.withPrintWriter(file) {
 			writer => writer.println(new java.util.Date())
 		}
-
 
 		/**
 		 * List検索API
@@ -31,6 +30,5 @@ object Main {
 		val test = List(0, -1, 2, 3, 4)
 		println("\n==== List contain negative number result ====")
 		println(ListMatcher.containsNegByFunction(test))
-
 	}
 }

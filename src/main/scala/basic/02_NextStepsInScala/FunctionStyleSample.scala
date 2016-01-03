@@ -5,7 +5,7 @@ package basic.NextStepsInScala
  */
 object FunctionStyleSample {
 
-	def main(args: Array[String]):Unit = {
+	def main(args: Array[String]) {
 		// 命令型のスタイル
 		println("nOutput in the imperative style")
 		printArgs(args)
@@ -18,8 +18,7 @@ object FunctionStyleSample {
 		println("\nOutput in the function style (no side effects)")
 		val res = printArgsFunctionStyle2(args)
 		println(res)
-		assert(res == "yo, shi, ka, wa, yu, u, ki")
-
+		assert(res == "next, step, in, scala")
 	}
 
 	def printArgs(args: Array[String]): Unit = {

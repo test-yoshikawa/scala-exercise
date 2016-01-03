@@ -5,12 +5,11 @@ package basic.FirstStepsInScala
  */
 object ForArgs {
 
-	def main(args: Array[String]): Unit  = {
+	def main(args: Array[String]) {
 		println("---- for (arg <- args) println(arg) ----")
 		for (arg <- args) println(arg)
 		println()
 
-		// 関数型スタイル
 		println("---- args.foreach(arg => println(arg)) ----")
 		args.foreach(arg => println(arg))
 		println()

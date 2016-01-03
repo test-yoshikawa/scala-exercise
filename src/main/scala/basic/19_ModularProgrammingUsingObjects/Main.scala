@@ -5,7 +5,7 @@ package basic.ModularProgrammingUsingObjects
  */
 object Main {
 	
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) {
 		val apple = SimpleDatabase.foodNamed("Apple").get
 		println(apple)
 

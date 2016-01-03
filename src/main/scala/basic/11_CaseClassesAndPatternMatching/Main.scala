@@ -90,8 +90,5 @@ object Main {
 		val exp = new BinOp("*", Number(5.0), Number(1.0))
 		val BinOp(op1, left, right) = exp
 		println("exp: " + exp + " => op1: " + op1 + ", left: " + left + ", right: " + right)
-
-
-
 	}
 }

@@ -9,6 +9,7 @@ object SequenceSample {
 		// List: 先頭項目の追加・削除が高速
 		println("==== List sample ====")
 		val colors = List("red", "blue", "green")
+		println("colors: " + colors)
 		println("colors.head: " + colors.head)
 		println("colors.tail: " + colors.tail)
 

@@ -27,7 +27,6 @@ object MapSample {
 
 		println("\n==== Map methods ====")
 		showMapMethods()
-
 	}
 
 	/**
@@ -51,6 +50,7 @@ object MapSample {
 	 */
 	def showMapMethods() {
 		val nums = Map("i" -> 1, "li" -> 2)	// immutable な Map を作成
+		println("immutable.nums: " + nums)
 		println("nums + (\"vi\" -> 6): " + (nums + ("vi" -> 6)))	// エントリーを追加する
 		println("nums - \"li\": " + (nums - "li")) // エントリーを削除する
 		println("nums ++ List(\"iii\" -> 3, \"v\" -> 5): " + (nums ++ List("iii" -> 3, "v" -> 5)))	// 複数のエントリーを追加する

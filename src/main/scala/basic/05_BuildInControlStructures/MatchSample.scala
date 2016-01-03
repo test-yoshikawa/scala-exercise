@@ -5,7 +5,7 @@ package basic.BuildInControlStructures
  */
 object MatchSample {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) = {
 		val firstArgs = if (args.length > 0) args(0) else ""
 		firstArgs match {
 			case "salt" => println("pepper")
@@ -14,6 +14,7 @@ object MatchSample {
 			case _ => println("huh?")
 		}
 
+		// 関数型スタイル
 		val friend =
 			firstArgs match {
 				case "salt" => "pepper"

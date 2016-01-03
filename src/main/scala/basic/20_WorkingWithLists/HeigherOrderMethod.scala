@@ -1,6 +1,7 @@
 package basic.WorkingWithLists
 
 object HeigherOrderMethod {
+
 	def main(args: Array[String]) {
 		// Listのマッピング
 		println("==== List mapping : map, flatMap, foreach ====")

@@ -14,7 +14,6 @@ object MergeSort {
 		val reverseIntSort = msort((x: Int, y: Int) => x > y) _
 		println(intSort(mixedInts))
 		println(reverseIntSort(mixedInts))
-
 	}
 
 	def msort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {

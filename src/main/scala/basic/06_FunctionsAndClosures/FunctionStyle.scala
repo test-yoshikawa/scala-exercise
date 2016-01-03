@@ -63,7 +63,7 @@ object FunctionStyle {
 		println(sum(c = 1, b = 2, a = 4))
 
 		println("\n==== Default parameter ====")
-		printTime();
+		printTime()
 		printTime(out = Console.err)
 		printTime(divisor = 1000)
 

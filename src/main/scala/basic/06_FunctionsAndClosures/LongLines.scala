@@ -20,5 +20,4 @@ object LongLines {
 			pricessLine(line)
 		}
 	}
-
 }

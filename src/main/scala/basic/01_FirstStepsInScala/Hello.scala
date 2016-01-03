@@ -5,7 +5,7 @@ package basic.FirstStepsInScala
  */
 object Hello {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) {
 		println("Hello, world, from a script")
 	}
 }

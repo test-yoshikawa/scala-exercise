@@ -22,7 +22,7 @@ object Main {
 
 		// above, beside, toStringの実装
 		println("\n==== Implement above, beside, toString ====")
-		val ae2 = new ArrayElement(Array(" yoshikawa", "!"))
+		val ae2 = new ArrayElement(Array(" scala", "!"))
 		println("<above method result >")
 		val aeAbove = ae.above(ae2)
 		println(aeAbove)

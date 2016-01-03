@@ -5,7 +5,7 @@ package basic.NextStepsInScala
  */
 object ListSample {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) {
 		// Listの初期化
 		val oneTwo = List(1, 2)
 		val threeFour = List(3, 4)
@@ -13,6 +13,7 @@ object ListSample {
 		val twoThree = List(2, 3)
 		val oneTwoThree = 1 :: twoThree // 新要素の追加
 
+		println()
 		println(oneTwo + " and " + threeFour + " were not mutated")
 		println("Thus, " + oneTwoThreeFour + " were not mutated")
 		println("list add result : " + oneTwoThree)
@@ -27,7 +28,7 @@ object ListSample {
 		print("foreach : ")
 		thrill.foreach(s => print(s + ", "))					// 繰り返し処理
 		println()
-		print("foreach（easy version）")
+		print("foreach (easy version) : ")
 		thrill.foreach(print)									// 繰り返し処理（簡潔版）
 		println()
 		println("Return the first element : " + thrill.head)
@@ -38,5 +39,6 @@ object ListSample {
 		println("Return the List which the processing to each element of the List : " + thrill.map(s => s + "y"))
 		println("Return a string that lined element of List : " + thrill.mkString(", "))
 		println("Line up reverse order : " + thrill.reverse)
+		println()
 	}
 }

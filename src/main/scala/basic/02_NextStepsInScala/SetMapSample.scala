@@ -5,7 +5,7 @@ package basic.NextStepsInScala
  */
 object SetMapSample {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) {
 		// イミュータブルな集合
 		var jetSet = Set("Boeing", "Airbus")
 		jetSet += "Lear"	// val変数の場合は実行エラー
@@ -28,7 +28,5 @@ object SetMapSample {
 		treasureMap += (2 -> "Find big X on ground.")
 		treasureMap += (3 -> "Dig.")
 		println(treasureMap(2))
-
-
 	}
 }

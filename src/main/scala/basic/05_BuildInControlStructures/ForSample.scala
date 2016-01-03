@@ -7,7 +7,7 @@ package basic.BuildInControlStructures
  */
 object ForSample {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) = {
 
 		println("==== for (i <- 1 to 4) ====")
 		for (i <- 1 to 4) println("Iteration " + i)

@@ -5,9 +5,9 @@ package basic.NextStepsInScala
  */
 object GreetStrings {
 
-	def main(args: Array[String]): Unit = {
+	def main(args: Array[String]) {
 		val greetStrings = new Array[String](3)		// 作成・初期化する方法として推奨できない
-		val numNames = Array("zero", "one", "two")	// 普段は←を使用するらしい
+		val numNames = Array("zero", "one", "two")	// 普段はこの初期化記法を使用するらしい
 		
 		greetStrings(0) = "Hello"
 		greetStrings.update(1, ",")	// 実行する際はこのコードに書き換えられる
@@ -16,6 +16,6 @@ object GreetStrings {
 		for (i <- 0 to 2) print(greetStrings(i))
 
 		for (name <- numNames) print(name + " ")
-
+		println("\n")
 	}
 }
