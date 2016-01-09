@@ -10,7 +10,7 @@ object FunctionStyleSample {
 		println("nOutput in the imperative style")
 		printArgs(args)
 
-		// 関数的なスタイル
+		// 関数的なスタイル（純粋な関数型ではない）
 		println("\nOutput in the function style (side effects)")
 		printArgsFunctionStyle1(args)
 
