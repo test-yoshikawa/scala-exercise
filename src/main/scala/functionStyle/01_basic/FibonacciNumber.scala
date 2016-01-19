@@ -17,7 +17,7 @@ object FibonacciNumber {
 	 */
 	def fib(n: Int): Int = {
 		def fibNum(n: Int, index1: Int, index2: Int): Int = {
-			if(n <= 1) index1
+			if(n <= 0) index1
 			else fibNum(n-1, index2, (index1 + index2))
 		}
 		fibNum(n, 0, 1)
