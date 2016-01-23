@@ -16,7 +16,7 @@ object myNumber {
 		var input = readLine()	// 標準入力
 		var checkDigit = -1			// チェックディジット
 
-		while(input != "") {
+		while(input.nonEmpty) {
 			val check = input.forall(_.isDigit)
 			if (!check) {
 				// 数値でない場合はエラー

@@ -12,7 +12,7 @@ object plusMinusZeros {
 		// 標準入力
 		var input = readLine()
 		var datas = new scala.collection.mutable.ListBuffer[Int]
- 		while(input != "") {
+ 		while(input.nonEmpty) {
 			datas += input.toInt
  			input = readLine
  		}

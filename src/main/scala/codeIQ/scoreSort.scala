@@ -24,7 +24,7 @@ object scoreSort {
 		val header = input.split(",").toList // header項目
 		val scores = new ListBuffer[List[String]]
 
-		while(input != "") {
+		while(input.nonEmpty) {
 			input = readLine()
 			val datas = input.split(",")
 			if (datas.size == 4) scores += datas.toList
