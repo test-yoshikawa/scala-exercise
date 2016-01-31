@@ -16,7 +16,7 @@ object ListExecute {
 			case Cons(h, t) => "summary: " + (h + sum(t))
 			case _  => "other" + 101
 		}
-		
+
 		println("Sample Data: List[" + List.mkString(data, ",") + "]")
 		println("matching: " + x)
 		val listTail = tail(data)
