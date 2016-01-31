@@ -17,8 +17,9 @@ object ListExecute {
 			case _  => "other" + 101
 		}
 
-		println("Sample Data: List[" + List.mkString(data, ",") + "]")
-		println("matching: " + x)
+		println("sample data: List[ %s ]".format(mkString(data, ",")))
+		println("=== method ===")
+		println("pattern match: " + x)
 		val listTail = tail(data)
 		println("tail: " + mkString(listTail, ","))
 		val listSetHead = setHead(data, 6)
