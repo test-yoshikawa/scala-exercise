@@ -1,4 +1,4 @@
-package functionStyle.basic
+package functionalProgramming
 
 /**
  * フィボナッチ数列

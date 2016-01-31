@@ -1,6 +1,9 @@
-package functionStyle.basic
+package functionalProgramming
 
-object MyModule {
+/**
+ * 高階関数、多相関数、無名関数サンプル
+ */
+object HigherOrderFunction {
 
 	/**
 	 * 絶対値の計算
