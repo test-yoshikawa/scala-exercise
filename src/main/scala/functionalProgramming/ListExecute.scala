@@ -16,18 +16,20 @@ object ListExecute {
 			case Cons(h, t) => "summary: " + (h + sum(t))
 			case _  => "other" + 101
 		}
-		println("[ List(1,2,3,4,5) matching ] " + x)
+		
+		println("Sample Data: List[" + List.mkString(data, ",") + "]")
+		println("matching: " + x)
 		val listTail = tail(data)
-		println("List(1,2,3,4,5).tail: " + mkString(listTail, ","))
+		println("tail: " + mkString(listTail, ","))
 		val listSetHead = setHead(data, 6)
-		println("List(1,2,3,4,5).setHead(6): " + mkString(listSetHead, ","))
+		println("setHead(6): " + mkString(listSetHead, ","))
 		val listDrop = drop(data, 3)
-		println("List(1,2,3,4,5).drop(3): " + mkString(listDrop, ","))
+		println("drop(3): " + mkString(listDrop, ","))
 		val listDropWhile = dropWhile(data, (x: Int) => x < 4)
-		println("List(1,2,3,4,5).dropwhile(_ < 4): " + mkString(listDropWhile, ","))
+		println("dropwhile(_ < 4): " + mkString(listDropWhile, ","))
 		val listDropWhileImprove = dropWhileImprove(data)(x => x < 5) // 型指定する必要なくなる
-		println("List(1,2,3,4,5).dropWhileImprove(_ < 5): " + mkString(listDropWhileImprove, ","))
+		println("dropWhileImprove(_ < 5): " + mkString(listDropWhileImprove, ","))
 		val listAppend = appendViaFoldRight(data, List(6,7))
-		println("List(1,2,3,4,5).appendViaFoldRight: " + mkString(listAppend, ","))
+		println("appendViaFoldRight: " + mkString(listAppend, ","))
 	}
 }
