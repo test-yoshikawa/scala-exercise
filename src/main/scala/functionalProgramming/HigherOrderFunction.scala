@@ -1,7 +1,7 @@
 package functionalProgramming
 
 /**
- * 高階関数、多相関数、無名関数サンプル
+ * 高階関数、多相関数、無名関数
  */
 object HigherOrderFunction {
 
@@ -39,7 +39,7 @@ object HigherOrderFunction {
 	 * 出力する関数(formatAbsとformatFactorial)の共通化
 	 */
 	private def formatResult(name: String, n: Int, f: Int => Int) = {
-		val msg = "The %s of %d is %d.(improve version)"
+		val msg = "The %s of %d is %d.(via anonymous function)"
 		msg.format(name, n, f(n))
 
 	}

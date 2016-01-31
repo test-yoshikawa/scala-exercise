@@ -7,7 +7,6 @@ object FibonacciNumber {
 
 	def main(args: Array[String]): Unit = {
 		val result = fib(args(0).toInt)
-
 		println("Fibonacci Number n = %s : %d".format(args(0), result))
 	}
 
