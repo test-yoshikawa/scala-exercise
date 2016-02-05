@@ -1,6 +1,6 @@
-package functionalProgramming
+package functionalProgramming.datastructures
 
-import functionalProgramming.List._
+import functionalProgramming.datastructures.List._
 
 /**
  * リスト操作実行用オブジェクト

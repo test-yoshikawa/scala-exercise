@@ -1,4 +1,4 @@
-package functionalProgramming
+package functionalProgramming.gettingstarted
 
 /**
  * 高階関数、多相関数、無名関数
