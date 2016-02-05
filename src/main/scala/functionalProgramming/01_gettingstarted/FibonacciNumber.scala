@@ -1,4 +1,4 @@
-package functionalProgramming
+package functionalProgramming.gettingstarted
 
 /**
  * フィボナッチ数列
