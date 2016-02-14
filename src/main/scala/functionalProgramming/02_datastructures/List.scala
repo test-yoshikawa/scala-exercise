@@ -1,4 +1,4 @@
-package functionalProgramming
+package functionalProgramming.datastructures
 
 // Aという方でパラメータ化されたListデータ型
 sealed trait List[+A]
