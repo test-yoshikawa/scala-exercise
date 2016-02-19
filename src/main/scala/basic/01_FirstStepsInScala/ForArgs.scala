@@ -4,7 +4,6 @@ package basic.FirstStepsInScala
  * コマンドライン引数のForとForeachによる出力
  */
 object ForArgs {
-
 	def main(args: Array[String]) {
 		println("---- for (arg <- args) println(arg) ----")
 		for (arg <- args) println(arg)

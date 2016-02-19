@@ -4,7 +4,6 @@ package basic.FirstStepsInScala
  * コマンドライン引数のwhileによる出力（改行あり）
  */
 object PrintArgs {
-
 	def main(args: Array[String]) {
 		// 命令型スタイル（改行あり）
 		var i = 0
