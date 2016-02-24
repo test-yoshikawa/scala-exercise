@@ -11,6 +11,9 @@ sudo mv scala-2.11.7 /usr/local/scala
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
 sudo yum -y install sbt
 
-# Add Environment
+# Add Environment(temporary)
 export PATH=$PATH:/usr/local/scala/bin
 echo $PATH
+
+# 上記のコマンドを /etc/profile の最終行に追記する
+# そうすることで常に環境変数が設定される
