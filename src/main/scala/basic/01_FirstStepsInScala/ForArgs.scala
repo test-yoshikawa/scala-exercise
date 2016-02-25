@@ -16,7 +16,7 @@ object ForArgs {
 		println("---- args.foreach((arg: String) => println(arg)) ----")
 		args.foreach((arg: String) => println(arg))
 		println()
-		
+
 		println("---- args.foreach(println) ----")
 		args.foreach(println)
 	}

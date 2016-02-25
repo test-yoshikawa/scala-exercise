@@ -4,7 +4,7 @@ package basic.ModularProgrammingUsingObjects
  * 処理実行用オブジェクト
  */
 object Main {
-	
+
 	def main(args: Array[String]) {
 		val apple = SimpleDatabase.foodNamed("Apple").get
 		println(apple)
@@ -18,5 +18,5 @@ object Main {
 		val studentRecipes = StudentBrowser.recipesUsing(frozenFood)
 		println(studentRecipes)
 	}
-	
+
 }

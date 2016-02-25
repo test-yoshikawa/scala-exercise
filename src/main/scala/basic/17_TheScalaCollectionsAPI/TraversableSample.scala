@@ -14,7 +14,7 @@ object TraversableSample {
 		val list2 = List(4, 5, 6, 7, 8)
 		println("list2: " + list2)
 		println("list1 ++ list2: " + (list1 ++ list2))						// list1とlist2の両方の要素から構成されるコレクションを返す
-		
+
 		println("\n==== map ====")
 		println("list1 map (1 + _): " + (list1 map (1 + _)))					// list1のすべての要素に「1 + _」を適用する
 		println("list1 flatMap (x => Some(x + 10)): " + (list1 flatMap (x => Some(x + 10))))	// すべての要素に対してコレクションを結果型とする関数を適用した結果のコレクションを返す
@@ -86,7 +86,7 @@ object TraversableSample {
 		println("list1 exists (_ % 2 == 0): " + (list1 exists (_ % 2 == 0)))			// 条件を満たす要素があるかどうかを示す論理値を返す
 		println("list1 count (_ % 2 == 0): " + (list1 count (_ % 2 == 0)))			// 条件を満たす要素数を返す
 
-		println("\n==== Convolutions ====")	
+		println("\n==== Convolutions ====")
 		println("(5 /: list1)(_ + _): " + (5 /: list1)(_ + _))				// 連続する要素に対して初期値(=5)から始めて左から右へ二項演算(_ + _)を適用した結果を返す
 		println("(list1 :\\ 5)(_ + _): " + (list1 :\ 5)(_ + _))				// 上記とほとんど同じだが、右から左へ演算を行う
 		println("list1.foldLeft(5)(_ + _): " + list1.foldLeft(5)(_ + _))			// (5 /: list1)(_ + _)と同じ

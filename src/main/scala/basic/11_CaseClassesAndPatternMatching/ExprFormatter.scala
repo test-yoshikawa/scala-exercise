@@ -59,6 +59,6 @@ class ExprFormatter {
 				if (enclPrec <= opPrec) oper
 				else elem("(") beside oper beside elem(")")
 		}
-	
+
 	def format(e: Expr): Element = format(e, 0)
 }

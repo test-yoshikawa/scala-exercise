@@ -17,9 +17,9 @@ object Email extends ((String, String) => String) {
 	 * メールアドレスのuserとdomainを抽出
 	 */
 	def selectorString(s: String) = s match {
-		case Email(user, domain) => 
+		case Email(user, domain) =>
 			"user: " + user + ", domain: " + domain
-		case _ => 
+		case _ =>
 			"not an email address"
 	}
 }

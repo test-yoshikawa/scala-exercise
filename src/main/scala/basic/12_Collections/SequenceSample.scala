@@ -37,7 +37,7 @@ object SequenceSample {
 		val bufferArray = new scala.collection.mutable.ArrayBuffer[Int]()
 		bufferArray += 12
 		bufferArray += 15
-		18 +=: bufferArray	// 先頭へ追加 
+		18 +=: bufferArray	// 先頭へ追加
 		println("bufferArray: " + bufferArray)
 		println("bufferArray length: " + bufferArray.length)
 		println("bufferArray(0): " + bufferArray(0))

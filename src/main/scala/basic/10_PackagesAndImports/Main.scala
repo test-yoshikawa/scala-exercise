@@ -16,7 +16,7 @@ object Main {
 		// val apple = Apple	// オブジェクトのインポートをしていないためコンパイルエラー
 		val orange = Orange
 		val Pear = Grape
-		
+
 		// メンバーの一部の名前を変更できる
 		import Fruits.{Apple => McIntosh}
 		val apple = McIntosh

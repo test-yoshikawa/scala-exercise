@@ -30,7 +30,7 @@ object Main {
 			val invalidValue = new Rational(5, 0)
 		} catch {
 			// 事前条件を満たない場合
-			case e: IllegalArgumentException => println("IllegalArgumentException") 
+			case e: IllegalArgumentException => println("IllegalArgumentException")
 		}
 		println("\n-- reduction --")
 		val three = new Rational(3)

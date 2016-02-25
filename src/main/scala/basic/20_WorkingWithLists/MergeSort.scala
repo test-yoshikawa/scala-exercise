@@ -21,7 +21,7 @@ object MergeSort {
 			(xs, ys) match {
 				case (Nil, _) => ys
 				case (_, Nil) => xs
-				case (x :: xs1, y :: ys1) => 
+				case (x :: xs1, y :: ys1) =>
 					if (less(x, y)) x :: merge(xs1, ys)
 					else y :: merge(xs, ys1)
 			}
