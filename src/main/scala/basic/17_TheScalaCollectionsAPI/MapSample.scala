@@ -43,7 +43,7 @@ object MapSample {
 		println("==== add and update ====")
 		var mutableMap1 = scala.collection.mutable.Map(1 -> "a", 2-> "b", 3-> "c", 4 ->"d")
 		println("mutableMap1: " + mutableMap1)
-		mutableMap1(5) = "e"					// 指定したキーと値のペアを追加する 
+		mutableMap1(5) = "e"					// 指定したキーと値のペアを追加する
 		println("mutableMap1(5) = \"e\": " + mutableMap1)
 		mutableMap1 += (6 -> "f", 7 -> "g")		// 複数指定できる
 		println("mutableMap1 += (6 -> \"f\", 7 -> \"g\"): " + mutableMap1)
@@ -52,7 +52,7 @@ object MapSample {
 		mutableMap1 put (10, "k")				// 指定したキーと値のペアを追加する
 		println("mutableMap1 put (10, \"k\"): " + mutableMap1)
 		println("mutableMap1 getOrElseUpdate (10, \"j\"): " + (mutableMap1 getOrElseUpdate (10, "j")))	// 指定したキーが定義されていれば対応する値を返す。そうでなけれが指定したキー/値で更新（追加）する
-		println("mutableMap1 getOrElseUpdate (11, \"j\"): " + (mutableMap1 getOrElseUpdate (11, "j")))	
+		println("mutableMap1 getOrElseUpdate (11, \"j\"): " + (mutableMap1 getOrElseUpdate (11, "j")))
 		println("mutableMap1: " + mutableMap1)
 
 		println("\n==== delete ====")

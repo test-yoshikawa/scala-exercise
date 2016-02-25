@@ -16,5 +16,5 @@ package basic.AbstractMembers
 		println("Direction.East.id: " + Direction.East.id)
 		println("Direction(1): " + Direction(1))
 	 }
-	 
+
  }

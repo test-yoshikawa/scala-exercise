@@ -13,10 +13,10 @@ object Rocket {
 	def chooseStrategy(rocket: Rocket) {
 		if (rocket.canGoHomeAgain)
 			goHome()
-		else 
+		else
 			pickAStar()
 	}
-	def goHome() { 
+	def goHome() {
 		fuel = fuel - 30
 		println("go home     : " + fuel)
 	}

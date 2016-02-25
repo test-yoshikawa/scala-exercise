@@ -18,7 +18,7 @@ object MapSample {
 			println("map(\"empty\")：" + map("empty"))	// 例外発生：NoSuchElementException
 		} catch {
 			case e: NoSuchElementException => println("NoSuchElementException")
-		}		
+		}
 
 		// 文章から単語を取得する
 		val text = "See Spot run. Run, Spot . Run!"

@@ -19,7 +19,7 @@ object Twice {
 	def userTwiceUpper(s: String) = s match {
 		case Email(Twice(x @ UpperCase()), domain) =>	// [x @ UpperCase()]: UpperCaseがマッチしたパターンに変数xを束縛する
 			"match: " + x + " in domain " + domain
-		case _ => 
+		case _ =>
 			"no match"
 	}
 }

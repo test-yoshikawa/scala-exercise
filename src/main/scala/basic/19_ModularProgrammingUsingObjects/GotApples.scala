@@ -4,7 +4,7 @@ package basic.ModularProgrammingUsingObjects
  * リンゴのレシピを出力するオブジェクト
  */
 object GotApple {
-	
+
 	def main(args: Array[String]): Unit = {
 		val db: Database =
 			if (args.nonEmpty && args(0) == "student") StudentDatabase
@@ -19,5 +19,5 @@ object GotApple {
 		for (category <- db.allCategories)
 			browser.displayCategory(category)
 	}
-	
+
 }
