@@ -10,7 +10,7 @@ import scala.io.StdIn.readLine
  * 　・直前に、Mr. Ms. Mrs. Mt. ４種の略称がある場合
  * 　・直前の文字列が、すべて数字で構成されている場合
  */
-object separateEnglishSentence {
+object SeparateEnglishSentence {
 
 	def main(args: Array[String]) {
 			var input = readLine()
@@ -31,8 +31,8 @@ object separateEnglishSentence {
 		val excludes = Seq("""Mr. """.r, """Ms. """.r, """Mrs. """.r, """Mt. """.r, """[0-9]. """.r)
 		var result = input
 		separates.foreach(
-			separate => 
-				result = separate.replaceAllIn(result, m => 
+			separate =>
+				result = separate.replaceAllIn(result, m =>
 					if (excludes.exists(e => e.findFirstIn(m.toString).nonEmpty)) m.toString
 					else m + "\n"
 				)

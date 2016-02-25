@@ -17,7 +17,7 @@ e,95,89,53
 f,64,99,43
 g,13,59,68
  */
-object scoreSort {
+object ScoreSort {
 
 	def main(args: Array[String]) {
 		var input = readLine()

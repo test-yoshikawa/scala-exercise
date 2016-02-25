@@ -6,7 +6,7 @@ import scala.io.StdIn.readLine
  * 1 から n まで連続する正の整数の中で「7」がいくつあるかを数える
  * ・「77」は2個として数える
  */
-object countSeven {
+object CountSeven {
 
 	def main(args: Array[String]) {
 		val input = readLine()	// 標準入力

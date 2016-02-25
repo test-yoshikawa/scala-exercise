@@ -2,8 +2,7 @@ package codeIQ
 
 import scala.io.StdIn.readLine
 
-
-object keyValueEvent {
+object KeyValueEvent {
 	val keys = Array("HelloWorld", "FizzBuzz", "Prime", "Fibonacci")
 
 	def main(args: Array[String]) {
@@ -15,7 +14,7 @@ object keyValueEvent {
 		}
 		// key , value に分ける
 		val keyValue = input.split(",").map(_.trim)
-		
+
 		val value = keyValue(1).toInt
 		println("==================")
 		keyValue(0) match {
