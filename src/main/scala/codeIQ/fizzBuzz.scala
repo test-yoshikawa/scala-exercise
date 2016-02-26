@@ -1,11 +1,11 @@
 package codeIQ
 
-object fizzBuzz {
+object FizzBuzz {
 
 	def main(args: Array[String]) {
 		for( number <- 1 to 100) {
 			println(checkFizzBuzz(number))
-		} 
+		}
 	}
 
 	/**

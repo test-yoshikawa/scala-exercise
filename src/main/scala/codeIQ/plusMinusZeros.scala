@@ -5,10 +5,10 @@ import scala.io.StdIn.readLine
 /**
  * 標準入力で入力した数値の中で2つの和が0になる組み合わせを計算する
  */
-object plusMinusZeros {
+object PlusMinusZeros {
 
 	def main(args: Array[String]) {
-		
+
 		// 標準入力
 		var input = readLine()
 		var datas = new scala.collection.mutable.ListBuffer[Int]

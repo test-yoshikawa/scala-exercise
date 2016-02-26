@@ -5,7 +5,7 @@ import scala.io.StdIn.readLine
 /**
  * 指定した数値より小さい素数の個数を数える
  */
-object countPrimeNumber {
+object CountPrimeNumber {
 
 	def main(args: Array[String]) {
 		val input = readLine()

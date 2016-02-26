@@ -10,7 +10,7 @@ import scala.collection.mutable.ListBuffer
  * ・数字以外が入っている、もしくは11桁や12桁でない場合、Errorと出力
  * ・空行入力で終了
  */
-object myNumber {
+object MyNumber {
 
 	def main(args: Array[String]) {
 		var input = readLine()	// 標準入力
@@ -23,7 +23,7 @@ object myNumber {
 				println("Error")
 			} else {
 				input.length match{
-					case 11 => 
+					case 11 =>
 						// 11桁の場合はチェックディジットを計算する
 						checkDigit = calcCalcDigit(input)
 						println("checkDigit: " + checkDigit)
@@ -55,11 +55,11 @@ object myNumber {
 		def calc(digit: Int, index: Int, number: ListBuffer[Int]): Int = {
 			if(index > number.length) {
 				val result = 11 - (digit % 11)
-				if (result <= 1) 0 else result 
+				if (result <= 1) 0 else result
 			} else {
-				val Qn = if (1 <= index && index <= 6) index + 1 else index - 5 
+				val Qn = if (1 <= index && index <= 6) index + 1 else index - 5
 				val Pn = number(index - 1)
-				calc(digit + (Pn * Qn), index + 1, number) 
+				calc(digit + (Pn * Qn), index + 1, number)
 			}
 		}
 		val digits = new ListBuffer[Int]
