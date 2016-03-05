@@ -18,12 +18,12 @@ object ForSample {
 
 		println()
 		println("==== for (i <- 1 until 4)  yield i ====") // return list
-		val nums = for (i <- 1 until 4)  yield i
+		val nums = for (i <- 1 until 4)  yield i	// yieldを使用することで反復結果を配列（Array型）に格納される
 		println(nums.toList)
 
 		println()
 		println("==== for filter ====")
-		val filesHere = (new java.io.File(".\\src\\main\\scala\\basic\\05_BuildInControlStructures")).listFiles
+		val filesHere = (new java.io.File("./src/main/scala/basic/05_BuildInControlStructures")).listFiles
 		for(file <- filesHere if file.getName.endsWith(".scala"))
 			println(file)
 
@@ -56,7 +56,7 @@ object ForSample {
 			file <- filesHere
 				if file.getName.endsWith(".scala");
 			line <- fileLines(file)
-				trimmmed = line.trim
+				trimmmed = line.trim // 新しい変数（trim）にバインドすることで1度だけの計算で回数が減る
 				if trimmmed.matches(pattern)
 			} println(file + ": " + trimmmed)
 	}

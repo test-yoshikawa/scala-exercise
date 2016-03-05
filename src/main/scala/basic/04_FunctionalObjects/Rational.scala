@@ -15,14 +15,14 @@ class Rational(n: Int, d: Int) extends Ordered[Rational] {
 
 	/**
 	 * 最大公約数を求める
-	 *
 	 */
 	def gcd(a: Int, b: Int): Int =
 		if (b == 0) a else gcd(b, a % b)
 
 	/**
-	 * 引数より小さいかどうか
-	 *
+	 * 引数より小さいかどうか判定する
+	 * ・addメソッドはn, dにしかアクセスできず、thatはaddメソッドのレシーバーでないので、that.n, that.dとできない。
+	 * ・フィールドにすることで解決される
 	 */
 	def lessThan(that: Rational) =
 		this.number * that.denom < that.number * this.denom
