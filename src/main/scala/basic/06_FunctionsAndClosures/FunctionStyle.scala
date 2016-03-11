@@ -43,6 +43,8 @@ object FunctionStyle {
 		// クロージャー（自由変数を含む関数オブジェクト。x:束縛変数, more:自由変数）
 		val addMore = (x: Int) => x + more
 		println(addMore(11))
+		more = 9
+		println(addMore(11)) // 自由変数moreを変えるとaddMoreメソッドの結果も変わる
 		var sum1 = 0
 		someNumbers.foreach(sum1 += _)	// クロージャー
 		println(sum1)
