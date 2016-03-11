@@ -6,7 +6,6 @@ package basic.FunctionalObjects
 object Main {
 
 	def main(args: Array[String]) {
-
 		//=======================
 		// Rational
 		//=======================
