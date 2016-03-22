@@ -1,11 +1,10 @@
-package basic.ControlAbstraction
+package basic.controlabstraction
 
 /**
  * API実行用
  *
  */
 object Main {
-
 	def main(args: Array[String]) {
 		/**
 		 * ファイル検索API

@@ -1,12 +1,11 @@
-package basic.Collections
+package basic.collections
 
 import scala.collection._
 
 /**
  * Map　サンプル
  */
-object MapSample {
-
+object Maps {
 	def main(args: Array[String]) {
 		val map = mutable.Map.empty[String, Int]
 		map("hello") = 1

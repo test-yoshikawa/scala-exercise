@@ -1,19 +1,13 @@
 package basic.classandobject
 
 /**
- * クラスオブジェクト実行用
+ * Applicationトレイトを利用したアプリケーション
  */
-object Main{
-
-	def main(args: Array[String]) {
-		//=======================
-		// シングルトン
-		//=======================
+object MainExtendsApp extends App {
 		println("execute ChecksumAccumlator")
 		println("Chapter4 => " + CheckSumAccumlator.calculate("Chapter4"))
 		println()
 		println("Chapter4.1 => " + CheckSumAccumlator.calculate("Chapter4.1"))
 		println()
 		println("Chapter4 => " + CheckSumAccumlator.calculate("Chapter4"))
-	}
 }

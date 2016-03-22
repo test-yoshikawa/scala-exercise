@@ -1,10 +1,9 @@
-package basic.BuildInControlStructures
+package basic.buildincontrol
 
 /**
  * Match式　サンプル
  */
-object MatchSample {
-
+object Matchs {
 	def main(args: Array[String]) = {
 		val firstArgs = if (args.length > 0) args(0) else ""
 		firstArgs match {

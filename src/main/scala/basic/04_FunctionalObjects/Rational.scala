@@ -1,4 +1,4 @@
-package basic.FunctionalObjects
+package basic.functionalobject
 
 /**
  * 有理数（Rational Number）クラス

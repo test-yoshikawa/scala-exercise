@@ -1,4 +1,4 @@
-package basic.CompositionAndInheritance
+package basic.compositionandinheritance
 
 import Element.elem
 

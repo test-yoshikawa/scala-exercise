@@ -1,10 +1,10 @@
-package basic.Collections
+package basic.collections
 
 /**
  * Set サンプル
  * ・==で比較して同じとされる要素が1つしかない（重複する要素がない）
  */
-object SetSample {
+object Sets {
 
 	def main(args: Array[String]) {
 		// 単語を取得する（大文字小文字は別）

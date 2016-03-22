@@ -1,4 +1,4 @@
-package PackagesAndImports
+package packagesandimports
 
 object PrintMenu {
 	def main(args: Array[String]) {

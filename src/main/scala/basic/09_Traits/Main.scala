@@ -1,4 +1,4 @@
-package basic.Traits
+package basic.traits
 
 /**
  * トレイトサンプル　実行用

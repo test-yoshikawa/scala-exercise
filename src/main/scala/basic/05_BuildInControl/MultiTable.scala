@@ -1,10 +1,9 @@
-package basic.BuildInControlStructures
+package basic.buildincontrol
 
 /**
  * 掛け算テーブル表示
  */
 object MultiTable {
-
 	def main(args: Array[String]) = {
 		val table = multiTable()
 		table.foreach(print)

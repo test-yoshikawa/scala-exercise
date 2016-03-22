@@ -1,10 +1,9 @@
-package basic.Collections
+package basic.collections
 
 /**
  * シーケンス サンプル
  */
-object SequenceSample {
-
+object Sequences {
 	def main(args: Array[String]) {
 		// List: 先頭項目の追加・削除が高速
 		println("==== List sample ====")

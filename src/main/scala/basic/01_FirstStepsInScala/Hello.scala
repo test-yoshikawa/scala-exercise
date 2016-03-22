@@ -1,4 +1,4 @@
-package basic.FirstStepsInScala
+package basic.firststep
 
 /**
  * Hello　World!

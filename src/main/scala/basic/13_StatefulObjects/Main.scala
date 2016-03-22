@@ -1,6 +1,6 @@
-package basic.StatefulObjects
+package basic.statefulobjects
 
-import basic.StatefulObjects.simulation._
+import basic.statefulobjects.simulation._
 
 /**
  * ステートフルオブジェクト

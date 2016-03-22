@@ -1,10 +1,9 @@
-package basic.FunctionalObjects
+package basic.functionalobject
 
 /**
  * 有理数　実行用サンプル
  */
 object Main {
-
 	def main(args: Array[String]) {
 		//=======================
 		// Rational
@@ -41,7 +40,13 @@ object Main {
 		println("\n-- multiple --")
 		println("1/2 * 2/3 = " + oneHalf.*(twoThirds))
 
-		// 暗黙の型変換の設定
+		// 暗黙の型変換の設定(warningが発生する)
+		// warningが発生するのは以下の理由のため
+		// ・implicit conversion の過剰な使用は多くの落とし穴を作ることになる
+		// ・implicit conversion はとても強力だし、その効果が理解しやすいので、過剰に使われやすい。
+		// ・implicit parameter を使ったほうが implicit conversion を使うよりも多くの場面で良い設計になる。
+		// あまり使いすぎないようにする
+		import scala.language.implicitConversions	// warningが発生しないようにimport
 		implicit def intToRational(x: Int) = new Rational(x)
 		println("2 * 1/2 = " +  2 * oneHalf)
 		println("\n-- multiple --")

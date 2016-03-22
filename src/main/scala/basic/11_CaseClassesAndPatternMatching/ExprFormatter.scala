@@ -1,7 +1,7 @@
 package basic.CaseClassesAndPatternMatching
 
-import basic.CompositionAndInheritance.Element
-import basic.CompositionAndInheritance.Element.elem
+import basic.compositionandinheritance.Element
+import basic.compositionandinheritance.Element.elem
 
 /**
  * 数式を整形(分数表示など)して表示するクラス

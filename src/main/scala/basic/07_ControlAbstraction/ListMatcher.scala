@@ -1,10 +1,9 @@
-package basic.ControlAbstraction
+package basic.controlabstraction
 
 /**
  * List パターンマッチ
  */
 object ListMatcher {
-
 	def containsNeg(nums: List[Int]): Boolean = {
 		var exists = false
 		for (num <- nums) {

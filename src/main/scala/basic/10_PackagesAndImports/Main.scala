@@ -1,4 +1,4 @@
-package PackagesAndImports
+package packagesandimports
 
 /**
  * パッケージオブジェクト　サンプル実行用

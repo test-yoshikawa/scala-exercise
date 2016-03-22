@@ -1,4 +1,4 @@
-package basic.Traits
+package basic.traits
 
 /**
  * 数値型のQueueと要素を2倍にするTraitをミックスインしたQueue
