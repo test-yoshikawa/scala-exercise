@@ -1,4 +1,4 @@
-package basic.FunctionsAndClosures
+package basic.functionsandclosures
 
 /**
  * <一般的な関数定義方法>
@@ -6,10 +6,9 @@ package basic.FunctionsAndClosures
  * Windowsでの実行の場合はsbt/sbtconfig.txtに「-Dfile.encoding=UTF-8」を追加
  * ⇒実行は成功するがコンソールは文字化けする
  * 【実行例】
- * sbt "run-main basic.FunctionsAndClosures.FindLongLines 10 ./src/main/scala/basic/05_BuildInControlStructures/MatchSample.scala"
+ * sbt "run-main basic.functionsandclosures.FindLongLines 10 ./src/main/scala/basic/05_BuildInControl/Matchs.scala"
  */
 object FindLongLines {
-
 	def main(args: Array[String]) {
 		val width = args(0).toInt
 		for(arg <- args.drop(1)) LongLines.processLines(arg, width)

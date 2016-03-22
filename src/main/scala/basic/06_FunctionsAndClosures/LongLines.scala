@@ -1,4 +1,4 @@
-package basic.FunctionsAndClosures
+package basic.functionsandclosures
 
 import scala.io.Source
 
@@ -6,7 +6,6 @@ import scala.io.Source
  * ファイルの行に関するオブジェクト
  */
 object LongLines {
-
 	/**
 	 * 指定された行の長さより長い行を出力する
 	 */

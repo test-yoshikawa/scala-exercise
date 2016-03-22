@@ -1,4 +1,4 @@
-package basic.NextStepsInScala
+package basic.nextstep
 
 import scala.io.Source
 

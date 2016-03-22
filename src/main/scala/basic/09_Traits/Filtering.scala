@@ -1,4 +1,4 @@
-package basic.Traits
+package basic.traits
 
 /**
  * Filter(=負の数値は除く)が設定されたTrait

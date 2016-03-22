@@ -1,4 +1,4 @@
-package basic.CompositionAndInheritance
+package basic.compositionandinheritance
 
 /**
  * 指定された文字をかけるだけ新しい書式のElement

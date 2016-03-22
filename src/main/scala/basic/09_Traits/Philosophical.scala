@@ -1,4 +1,4 @@
-package basic.Traits
+package basic.traits
 
 /**
  * トレイト

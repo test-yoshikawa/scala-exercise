@@ -1,10 +1,9 @@
-package basic.NextStepsInScala
+package basic.nextstep
 
 /**
  * 配列の操作
  */
 object GreetStrings {
-
 	def main(args: Array[String]) {
 		val greetStrings = new Array[String](3)		// 作成・初期化する方法として推奨できない
 		val numNames = Array("zero", "one", "two")	// 普段はこの初期化記法を使用するらしい

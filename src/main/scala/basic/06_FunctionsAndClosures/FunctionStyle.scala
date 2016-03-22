@@ -1,10 +1,9 @@
-package basic.FunctionsAndClosures
+package basic.functionsandclosures
 
 /**
  * 関数型スタイル　サンプル
  */
 object FunctionStyle {
-
 	def main(args: Array[String]) {
 		// 関数リテラルの例
 		println("==== Function literal example ====")

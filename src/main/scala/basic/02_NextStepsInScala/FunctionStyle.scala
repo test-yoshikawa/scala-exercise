@@ -1,10 +1,9 @@
-package basic.NextStepsInScala
+package basic.nextstep
 
 /**
  * 関数型スタイル　サンプル
  */
-object FunctionStyleSample {
-
+object FunctionStyle {
 	def main(args: Array[String]) {
 		// 命令型のスタイル
 		println("nOutput in the imperative style")
@@ -21,6 +20,9 @@ object FunctionStyleSample {
 		assert(res == "next, step, in, scala")
 	}
 
+	/**
+	 * 引数の要素をすべて出力（命令型スタイル）
+	 */
 	def printArgs(args: Array[String]): Unit = {
 		var i = 0
 		while (i < args.length) {
@@ -29,9 +31,15 @@ object FunctionStyleSample {
 		}
 	}
 
+	/**
+	 * 引数の要素をすべて出力（関数的なスタイル）
+	 */
 	def printArgsFunctionStyle1(args: Array[String]): Unit = {
 		args.foreach(print)
 	}
 
+	/**
+	 * 引数の要素をすべて出力（関数型のスタイル）
+	 */
 	def printArgsFunctionStyle2(args: Array[String]) = args.mkString(", ")
 }

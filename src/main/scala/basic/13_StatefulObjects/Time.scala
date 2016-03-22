@@ -1,4 +1,4 @@
-package basic.StatefulObjects
+package basic.statefulobjects
 
 /**
  * 時間を扱うクラス

@@ -1,10 +1,9 @@
-package basic.NextStepsInScala
+package basic.nextstep
 
 /**
  * Set と Map　サンプル
  */
-object SetMapSample {
-
+object SetMap {
 	def main(args: Array[String]) {
 		// immutableな集合
 		var jetSet = Set("Boeing", "Airbus")

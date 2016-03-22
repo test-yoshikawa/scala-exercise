@@ -1,4 +1,4 @@
-package basic.ClassesAndObjects
+package basic.classandobject
 
 import scala.collection.mutable.Map
 
@@ -7,7 +7,7 @@ import scala.collection.mutable.Map
  * ※同名のオブジェクトが存在する場合は「コンパニオンクラス」と呼ぶ
  *
  */
-class ChecksumAccumlator {
+class CheckSumAccumlator {
 	private var sum = 0	// アクセス修飾子を指定しなければpublicになる
 
 	def add(b: Byte) { sum += b }	// 引数はval
@@ -21,14 +21,14 @@ class ChecksumAccumlator {
  * ※同じソースファイル内に定義する
  *
  */
-object ChecksumAccumlator {
+object CheckSumAccumlator {
 	private val cache = Map[String, Int]()
 	def calculate(s: String): Int =
 		if (cache.contains(s)) {
 			println("get from cache!")
 			cache(s)
 		} else {
-			val acc = new ChecksumAccumlator
+			val acc = new CheckSumAccumlator
 			for (c <- s)
 				acc.add(c.toByte)
 			val cs = acc.checksum()

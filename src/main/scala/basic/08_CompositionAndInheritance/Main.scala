@@ -1,4 +1,4 @@
-package basic.CompositionAndInheritance
+package basic.compositionandinheritance
 
 /**
  * 2Dレイアウト要素を構築してレンダリングするライブラリの実行用
@@ -14,10 +14,10 @@ object Main {
 
 		// 多相性・動的束縛(ダイナミックバインディング)
 		println("\n==== Polymorphism and Dynamic binding ====")
-		val le = new LineElement("scala")
+		// val le = new LineElement("scala") // -Xcheckinitオプションを付けているため実行時例外が発生する
 		val ue = new UniformElement('x', 2, 3)
 		invokeDemo(ae)
-		invokeDemo(le)
+		// invokeDemo(le)
 		invokeDemo(ue) // demo()をオーバーライドをしていないためスーパークラスのdemo()の実装を継承
 
 		// above, beside, toStringの実装
@@ -33,8 +33,8 @@ object Main {
 		println("\n==== Hide implement class (define singleton object) ====")
 		val ae3 = Element.elem(Array("ArrayElementSingleton", "TEST"))
 		println(ae3)
-		val le2 = Element.elem("LineElementSingleton")
-		println(le2)
+		// val le2 = Element.elem("LineElementSingleton")// -Xcheckinitオプションを付けているため実行時例外が発生する
+		// println(le2)
 		val ue2 = Element.elem('x', 20, 10)
 		println(ue2)
 	}

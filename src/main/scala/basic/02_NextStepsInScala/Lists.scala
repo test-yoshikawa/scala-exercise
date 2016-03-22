@@ -1,10 +1,9 @@
-package basic.NextStepsInScala
+package basic.nextstep
 
 /**
  * Listの操作サンプル
  */
-object ListSample {
-
+object Lists {
 	def main(args: Array[String]) {
 		// Listの初期化
 		val oneTwo = List(1, 2)

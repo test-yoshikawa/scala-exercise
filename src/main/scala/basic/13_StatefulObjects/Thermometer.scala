@@ -1,4 +1,4 @@
-package basic.StatefulObjects
+package basic.statefulobjects
 
 /**
  * 温度計を扱うクラス

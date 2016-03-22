@@ -1,4 +1,4 @@
-package PackagesAndImports {
+package packagesandimports {
 	package navigation {
 		// chapter13.navigationパッケージ
 		class Navigator {

@@ -1,14 +1,12 @@
-package basic.BuildInControlStructures
+package basic.buildincontrol
 
 /**
  * For文　サンプル
  * Windowsでの実行の場合はsbt/sbtconfig.txtに「-Dfile.encoding=UTF-8」を追加
  * ⇒実行は成功するがコンソールは文字化けする
  */
-object ForSample {
-
+object Fors {
 	def main(args: Array[String]) = {
-
 		println("==== for (i <- 1 to 4) ====")
 		for (i <- 1 to 4) println("Iteration " + i)
 
@@ -23,7 +21,7 @@ object ForSample {
 
 		println()
 		println("==== for filter ====")
-		val filesHere = (new java.io.File("./src/main/scala/basic/05_BuildInControlStructures")).listFiles
+		val filesHere = (new java.io.File("./src/main/scala/basic/05_BuildInControl")).listFiles
 		for(file <- filesHere if file.getName.endsWith(".scala"))
 			println(file)
 

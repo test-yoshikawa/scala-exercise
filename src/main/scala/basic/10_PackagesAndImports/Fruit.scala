@@ -1,4 +1,4 @@
-package PackagesAndImports
+package packagesandimports
 
 /**
  * インポートのサンプル

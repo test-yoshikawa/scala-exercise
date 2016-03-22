@@ -1,10 +1,9 @@
-package basic.ControlAbstraction
+package basic.controlabstraction
 
 /**
  * カリー化された関数
  */
 object CurryingFunction {
-
 	def main(args: Array[String]) = {
 		val onePlus = curriedSum(1)_
 		println(onePlus(2))

@@ -1,4 +1,4 @@
-package basic.CompositionAndInheritance
+package basic.compositionandinheritance
 
 /**
  * レイアウト要素を表現するオブジェクト
@@ -7,10 +7,10 @@ object Element {
 	// 非公開クラスの実装の隠ぺい
 	private class ArrayElementHidden(val contents: Array[String]) extends Element
 
-	private class LineElementHidden(s: String) extends Element {
+	private class LineElementHidden(s: String, override val height: Int) extends Element {
 		def contents = Array(s)
 		override val width = s.length
-		override val height = 1
+		// override val height = 1 // -Xcheckinitオプションつけると実行時例外が発生するので、コンストラクタで設定させる
 	}
 
 	private class UniformElementHidden(ch: Char, override val width: Int, override val height: Int) extends Element {
@@ -19,7 +19,7 @@ object Element {
 
 	// ファクトリーメソッドの実装
 	def elem(contents: Array[String]): Element = new ArrayElementHidden(contents)
-	def elem(line: String): Element = new LineElementHidden(line)
+	def elem(line: String): Element = new LineElementHidden(line, 1)
 	def elem(ch: Char, width: Int, height: Int): Element = new UniformElementHidden(ch, width, height)
 }
 
