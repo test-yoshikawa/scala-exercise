@@ -1,4 +1,4 @@
-package basic.CaseClassesAndPatternMatching
+package basic.caseclassandpatternmatching
 
 /**
  * 変数、数値、単項・二項演算から構成される算術式抽象クラス

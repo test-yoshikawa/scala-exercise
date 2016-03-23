@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 class Dog extends Animal {
 	type SuitableFood = DogFood

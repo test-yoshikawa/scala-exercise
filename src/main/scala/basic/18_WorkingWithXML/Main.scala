@@ -1,7 +1,6 @@
-package basic.WorkingWithXML
+package basic.workingwithxml
 
 object Main {
-
 	def main(args: Array[String]) {
 		val therm = new CCTherm()
 

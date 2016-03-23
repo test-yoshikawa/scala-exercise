@@ -1,4 +1,4 @@
-package basic.ForExpressionsRevisited
+package basic.forexpressionsrevisited
 
 case class Person(name: String, isMale: Boolean, children: Person*)
 

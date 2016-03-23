@@ -9,7 +9,7 @@ scalacOptions ++= Seq(
 	"-feature",			// 明示的に使用、もしくは注意しなければならない機能を利用している
 	"-unchecked",	// 型消去などでパターンマッチが有効に機能しない場合
 	"-Xlint",			// その他望ましい書き方や落とし穴についての情報
-	"-Xcheckinit"
+	"-Xcheckinit"	// 初期化チェック（未初期化のフィールドがあれば実行エラー）
 )
 
 resolvers ++= Seq(
@@ -23,6 +23,7 @@ libraryDependencies ++= Seq(
 	"org.pegdown" % "pegdown" % "1.4.2" % "test",
 	"org.scala-lang.modules" %% "scala-xml" % "1.0.3",
 	"junit" % "junit" % "4.11" % "test",
-	"com.typesafe.akka" %% "akka-actor" % "2.4.1",
+	// "com.typesafe.akka" %% "akka-actor" % "2.4.1",
+	"com.typesafe.akka" % "akka-actor_2.11" % "2.4.1",
 	"org.scalacheck" %% "scalacheck" % "1.12.5" % "test"
 )

@@ -1,4 +1,4 @@
-package codeIQ
+package codeiq
 
 import scala.io.StdIn.readLine
 

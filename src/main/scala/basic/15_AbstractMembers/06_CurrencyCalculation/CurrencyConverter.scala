@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 /** 通貨の換算レート */
 object CurrencyConverter {

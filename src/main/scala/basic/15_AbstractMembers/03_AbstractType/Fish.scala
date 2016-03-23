@@ -1,3 +1,3 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 class Fish extends Food
