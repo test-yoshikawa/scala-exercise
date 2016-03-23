@@ -1,4 +1,4 @@
-package codeIQ
+package codeiq
 
 object FizzBuzz {
 

@@ -1,4 +1,4 @@
-package basic.Extractors
+package basic.extractors
 
 /**
  * 拡張版Email文字列抽出しオブジェクト

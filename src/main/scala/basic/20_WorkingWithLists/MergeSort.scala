@@ -1,4 +1,4 @@
-package basic.WorkingWithLists
+package basic.workingwithlist
 
 /**
  * マージソート

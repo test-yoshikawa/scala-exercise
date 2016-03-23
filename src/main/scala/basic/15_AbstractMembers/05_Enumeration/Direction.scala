@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 /**
  * 列挙型サンプル(Colorクラス)
@@ -6,6 +6,6 @@ package basic.AbstractMembers
  object Direction extends Enumeration {
 	val North = Value("North!")
 	val East = Value("East!")
-	val South = Value("South")
-	val West = Value("West")
+	val South = Value("South!")
+	val West = Value("West!")
  }

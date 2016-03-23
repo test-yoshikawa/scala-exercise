@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 /** 通貨計算サンプル */
 object CurrencyCalculation {

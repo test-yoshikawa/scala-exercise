@@ -1,4 +1,4 @@
-package basic.Extractors
+package basic.extractors
 
 /**
  * UpperCase文字列抽出しオブジェクト

@@ -1,4 +1,4 @@
-package basic.CaseClassesAndPatternMatching
+package basic.caseclassandpatternmatching
 
 import basic.compositionandinheritance.Element
 import basic.compositionandinheritance.Element.elem

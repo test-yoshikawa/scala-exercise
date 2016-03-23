@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 object InitializeAbstractVal {
 
@@ -11,12 +11,14 @@ object InitializeAbstractVal {
 
 		// コンストラクタに渡される前にパラメータが評価されるため、numerArg, denomArgは0になる
 		try {
+			// -Xcheckinitオプションを付けると実行エラーになる
 			val result1 = new RationalTrait{
 				val numerArg = 1 * x
 				val denomArg = 2 * x	// denomArgが0となるためrequiredエラーになる
 			}
 			println(result1)
 		} catch {
+			case e: UninitializedFieldError => println("runtime error! by -Xcheckinit option")
 		  case t: Throwable => t.printStackTrace() // TODO: handle error
 		}
 
@@ -47,11 +49,17 @@ object InitializeAbstractVal {
 
 		println("\n< Initialize RationalTrait by lazy evaluation val >")
 		val y = 3
-		val result4 = new LazyRationalTrait{
-				val numerArg = 1 * y
-				val denomArg = 2 * y
+		try {
+			// -Xcheckinitオプションを付けると実行エラーになる
+			val result4 = new LazyRationalTrait{
+				val numerArg = 1 * x
+				val denomArg = 2 * x	// denomArgが0となるためrequiredエラーになる
+			}
+			println(result4)
+		} catch {
+			case e: UninitializedFieldError => println("runtime error! by -Xcheckinit option")
+		  case t: Throwable => t.printStackTrace() // TODO: handle error
 		}
-		println(result4)
 
 	}
 }

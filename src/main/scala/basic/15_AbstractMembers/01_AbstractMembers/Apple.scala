@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 abstract class Apple extends Fruit {
 	val v: String

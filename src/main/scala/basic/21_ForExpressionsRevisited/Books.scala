@@ -1,4 +1,4 @@
-package basic.ForExpressionsRevisited
+package basic.forexpressionsrevisited
 
 case class Book(title: String, authors: String*)
 

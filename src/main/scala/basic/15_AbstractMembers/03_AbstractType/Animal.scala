@@ -1,4 +1,4 @@
-package basic.AbstractMembers
+package basic.abstractmembers
 
 abstract class Animal {
 	type SuitableFood <: Food
