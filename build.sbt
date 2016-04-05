@@ -25,5 +25,10 @@ libraryDependencies ++= Seq(
 	"junit" % "junit" % "4.11" % "test",
 	// "com.typesafe.akka" %% "akka-actor" % "2.4.1",
 	"com.typesafe.akka" % "akka-actor_2.11" % "2.4.1",
-	"org.scalacheck" %% "scalacheck" % "1.12.5" % "test"
+	"org.scalacheck" %% "scalacheck" % "1.12.5" % "test",
+	"com.typesafe.slick" %% "slick" % "3.1.1",				// Slick（O/R まっぱー）
+    "com.typesafe.slick" %% "slick-codegen" % "3.1.1",		// テーブル定義を自動出力
+	"com.typesafe" % "config" % "1.3.0",					// 設定を記述するライブラリ
+    "org.postgresql" % "postgresql" % "9.3-1102-jdbc41",	// postgresql JDBC
+    "ch.qos.logback" % "logback-classic" % "1.1.2"			// ログ出力
 )
