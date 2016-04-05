@@ -1,0 +1,33 @@
+<configuration>
+<!--
+<configuration debug="true"> と代わりに書くと
+- 設定ファイルが見つかったかどうか
+- 設定ファイルのXML文法が適格かどうか
+の結果も出力される。
+ -->
+    <property name="ConsoleLevel" value="ERROR" />
+
+    <!--コンソールへの出力設定 name属性の値はユニークであれば何でもいい-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <!-- INFO だけしかこの設定でログを出力しないようにfilterを設定-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>${ConsoleLevel}</level> <!-- 上で指定したpropertyを使う。-->
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <!-- ログのフォーマットを指定-->
+            <pattern>time:%d{MM/dd HH:mm:ss} --- level:%-5level --- logger[%thread]:%logger --- message:%msg%n</pattern>
+            <!--
+                %d{<format>}: ログが出力された時間
+                %-5level: ログのレベル[trace, debug, info, warn, error]を5つ分のスペースを使って書き出す。(e.g. infoは4文字なので最後に1つスペースが空く。)
+                %logger: ログが発生した場所
+                %thread: ログが発生したスレッド
+                %msg: ログのメッセージ
+                %n: 改行
+                ※ 出力例は後述
+            -->
+        </encoder>
+    </appender>
+ </configuration>
