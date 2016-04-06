@@ -3,7 +3,7 @@ package slickPractice
 import slick.codegen.SourceCodeGenerator
 
 /**
- * テーブル定義を自動出力（Tables.scalaが作成される）
+ * テーブル定義よりクラス自動出力（Tables.scalaが作成される）
  */
 object CodeGen extends App {
   val slickDriver = "slick.driver.PostgresDriver"
