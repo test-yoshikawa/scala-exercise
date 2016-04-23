@@ -18,7 +18,7 @@ object Main {
 		filesContaining.toList.foreach(println _)
 
 		println("\n==== File create ====")
-		val file = new java.io.File("./src/main/scala/basic/07_ControlAbstraction/data.txt")
+		val file = new java.io.File("./src/main/scala/basic/07_controlabstraction/data.txt")
 		FileMatcher.withPrintWriter(file) {
 			writer => writer.println(new java.util.Date())
 		}

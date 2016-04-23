@@ -7,7 +7,7 @@ package basic.controlabstraction
  */
 object FileMatcher {
 
-	private def filesHere = (new java.io.File("./src/main/scala/basic/07_ControlAbstraction")).listFiles
+	private def filesHere = (new java.io.File("./src/main/scala/basic/07_controlabstraction")).listFiles
 
 	/**
 	 * ファイル名の後方一致検索
