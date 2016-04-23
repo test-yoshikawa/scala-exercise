@@ -21,8 +21,8 @@ object Fors {
 
 		println()
 		println("==== for filter ====")
-		val filesHere = (new java.io.File("./src/main/scala/basic/05_BuildInControl")).listFiles
-		for(file <- filesHere if file.getName.endsWith(".scala"))
+		val filesHere = (new java.io.File("./src/main/scala/basic/05_buildincontrol")).listFiles
+		for(file <- filesHere if file.getName.endsWith(".txt"))
 			println(file)
 
 		println()
@@ -44,7 +44,7 @@ object Fors {
 		scala.io.Source.fromFile(file).getLines().toList
 
 	/**
-	 * grepを行う
+	 * patternが含まれているScalaファイルをgrepする
 	 */
 	def grep(filesHere: Array[java.io.File], pattern: String) = {
 		for(file <- filesHere if file.getName.endsWith(".scala");
