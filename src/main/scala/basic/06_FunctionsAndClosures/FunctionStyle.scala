@@ -3,7 +3,7 @@ package basic.functionsandclosures
 /**
  * 関数型スタイル　サンプル
  */
-object FunctionStyle {
+object FunctionalStyle {
 	def main(args: Array[String]) {
 		// 関数リテラルの例
 		println("==== Function literal example ====")

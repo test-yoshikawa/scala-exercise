@@ -6,7 +6,7 @@ package basic.functionsandclosures
  * Windowsでの実行の場合はsbt/sbtconfig.txtに「-Dfile.encoding=UTF-8」を追加
  * ⇒実行は成功するがコンソールは文字化けする
  * 【実行例】
- * sbt "run-main basic.functionsandclosures.FindLongLines 10 ./src/main/scala/basic/05_BuildInControl/Matchs.scala"
+ * sbt "run-main basic.functionsandclosures.FindLongLines 10 ./src/main/scala/basic/05_buildincontrol/Matchs.scala"
  */
 object FindLongLines {
 	def main(args: Array[String]) {
