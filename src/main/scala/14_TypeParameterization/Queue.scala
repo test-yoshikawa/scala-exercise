@@ -1,4 +1,4 @@
-package basic.typeparameterization
+package typeparameterization
 
 trait Queue[T] {
 	def head: T

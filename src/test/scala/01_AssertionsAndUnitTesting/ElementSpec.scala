@@ -1,8 +1,8 @@
-package basic.AssertionsAndUnitTesting
+package assertionsandunittesting
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
-import basic.CompositionAndInheritance.Element.elem
+import compositionandinheritance.Element.elem
 
 /**
  * ふるまい駆動開発（behavior-driven developmennt:BDD）のテストスタイル

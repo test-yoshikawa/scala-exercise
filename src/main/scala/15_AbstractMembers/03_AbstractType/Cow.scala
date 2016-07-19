@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 class Cow extends Animal {
 	type SuitableFood = Grass

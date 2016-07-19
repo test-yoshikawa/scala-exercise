@@ -1,4 +1,4 @@
-package basic.functionsandclosures
+package functionsandclosures
 
 /**
  * <一般的な関数定義方法>

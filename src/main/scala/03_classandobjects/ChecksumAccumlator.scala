@@ -1,4 +1,4 @@
-package basic.classandobject
+package classandobject
 
 import scala.collection.mutable.Map
 

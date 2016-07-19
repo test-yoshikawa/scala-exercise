@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 /**
  * 遅延評価val デモ

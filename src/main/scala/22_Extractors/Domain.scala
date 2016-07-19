@@ -1,4 +1,4 @@
-package basic.extractors
+package extractors
 
 object Domain {
 	// 注入メソッド（オプション）

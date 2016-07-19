@@ -1,4 +1,4 @@
-package basic.traits
+package traits
 
 /**
  * 数値型Queueの抽象クラス

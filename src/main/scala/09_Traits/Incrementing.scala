@@ -1,4 +1,4 @@
-package basic.traits
+package traits
 
 /**
  * Queueの要素を+1するTrait

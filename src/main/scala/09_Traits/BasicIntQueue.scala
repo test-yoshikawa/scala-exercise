@@ -1,4 +1,4 @@
-package basic.traits
+package traits
 
 import scala.collection.mutable.ArrayBuffer
 

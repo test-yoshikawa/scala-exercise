@@ -1,4 +1,4 @@
-package basic.functionsandclosures
+package functionsandclosures
 
 import scala.io.Source
 

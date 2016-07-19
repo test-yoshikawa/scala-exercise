@@ -1,4 +1,4 @@
-package basic.classandobject
+package classandobject
 
 /**
  * クラスオブジェクト実行用

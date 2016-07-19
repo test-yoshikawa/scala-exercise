@@ -1,4 +1,4 @@
-package basic.nextstep
+package nextstep
 
 /**
  * 関数型スタイル　サンプル
@@ -6,7 +6,7 @@ package basic.nextstep
 object FunctionStyle {
 	def main(args: Array[String]) {
 		// 命令型のスタイル
-		println("nOutput in the imperative style")
+		println("nOutput in the imperative style(命令型)")
 		printArgs(args)
 
 		// 関数的なスタイル（純粋な関数型ではない）
@@ -17,7 +17,12 @@ object FunctionStyle {
 		println("\nOutput in the function style (no side effects)")
 		val res = printArgsFunctionStyle2(args)
 		println(res)
-		assert(res == "next, step, in, scala")
+		val compare = "next, step, in, scala"
+		try {
+			assert(res == compare)
+		} catch {
+			case e:AssertionError => println("java.lang.AssertionError expected: [" + compare + "] actual: [" + res + "]")
+		}
 	}
 
 	/**

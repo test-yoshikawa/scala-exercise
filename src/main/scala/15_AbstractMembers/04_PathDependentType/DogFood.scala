@@ -1,3 +1,3 @@
-package basic.abstractmembers
+package abstractmembers
 
- class DogFood extends Food
+class DogFood extends Food

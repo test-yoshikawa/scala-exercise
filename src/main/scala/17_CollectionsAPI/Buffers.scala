@@ -1,4 +1,4 @@
-package basic.collectionsapi
+package collectionsapi
 
 import scala.language.postfixOps // warningが発生するためimport
 import scala.collection.mutable._

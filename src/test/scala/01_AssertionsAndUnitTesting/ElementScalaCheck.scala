@@ -1,9 +1,9 @@
-package basic.AssertionsAndUnitTesting
+package assertionsandunittesting
 
 import org.scalatest.WordSpec
 import org.scalatest.prop.Checkers
 import org.scalacheck.Prop._
-import basic.CompositionAndInheritance.Element.elem
+import compositionandinheritance.Element.elem
 
 /**
  * ScalaCheckを用いたユニットテスト

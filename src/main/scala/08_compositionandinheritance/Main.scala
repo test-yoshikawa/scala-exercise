@@ -1,4 +1,4 @@
-package basic.compositionandinheritance
+package compositionandinheritance
 
 /**
  * 2Dレイアウト要素を構築してレンダリングするライブラリの実行用

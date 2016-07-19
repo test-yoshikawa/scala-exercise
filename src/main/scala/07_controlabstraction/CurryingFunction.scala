@@ -1,4 +1,4 @@
-package basic.controlabstraction
+package controlabstraction
 
 /**
  * カリー化された関数

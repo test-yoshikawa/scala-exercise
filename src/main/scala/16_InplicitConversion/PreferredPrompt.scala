@@ -1,3 +1,3 @@
-package basic.implicitconversion
+package implicitconversion
 
 class PreferredPrompt (val preference: String)

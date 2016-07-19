@@ -1,4 +1,4 @@
-package basic.statefulobjects.simulation
+package statefulobjects.simulation
 
 /**
  * シミュレーションのフレームワークを定義する抽象クラス

@@ -1,4 +1,4 @@
-package basic.caseclassandpatternmatching
+package caseclassandpatternmatching
 
 /**
  *Option型　サンプル

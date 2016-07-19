@@ -1,4 +1,4 @@
-package basic.collectionsapi
+package collectionsapi
 
 object ConcreteMutable {
 	def main(args: Array[String]) {

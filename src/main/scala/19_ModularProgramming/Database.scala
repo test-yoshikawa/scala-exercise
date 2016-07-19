@@ -1,4 +1,4 @@
-package basic.modularprogramming
+package modularprogramming
 
 /**
  * データベースクラス

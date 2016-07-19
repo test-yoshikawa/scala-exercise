@@ -1,4 +1,4 @@
-package basic.compositionandinheritance
+package compositionandinheritance
 
 /**
  * ArrayElementを拡張

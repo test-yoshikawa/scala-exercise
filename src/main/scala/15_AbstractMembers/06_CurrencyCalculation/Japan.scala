@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 /** 日本の通貨オブジェクト */
 object Japan extends CurrencyZone {

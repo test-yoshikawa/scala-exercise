@@ -1,4 +1,4 @@
-package basic.statefulobjects.simulation
+package statefulobjects.simulation
 
 /**
  * デジタル回路シミュレーション

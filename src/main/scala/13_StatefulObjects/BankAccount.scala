@@ -1,4 +1,4 @@
-package basic.statefulobjects
+package statefulobjects
 
 /**
  * mutableな銀行口座クラス

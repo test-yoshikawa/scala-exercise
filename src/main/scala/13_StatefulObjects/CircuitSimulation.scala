@@ -1,4 +1,4 @@
-package basic.statefulobjects.simulation
+package statefulobjects.simulation
 
 /**
  * 半加算器と全加算器のメソッド定義を含むシミュレーションクラス

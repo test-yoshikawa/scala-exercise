@@ -1,4 +1,4 @@
-package basic.buildincontrol
+package buildincontrol
 
 /**
  * 掛け算テーブル表示

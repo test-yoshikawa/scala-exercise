@@ -1,4 +1,4 @@
-package basic.typeparameterization
+package typeparameterization
 
 class Person(val firstName: String, val lastName: String) extends Ordered[Person] {
 

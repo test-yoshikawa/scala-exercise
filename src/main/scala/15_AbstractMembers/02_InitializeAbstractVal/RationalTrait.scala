@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 trait RationalTrait {
 	val numerArg: Int

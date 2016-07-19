@@ -1,4 +1,4 @@
-package basic.classandobject
+package classandobject
 
 /**
  * Applicationトレイトを利用したアプリケーション

@@ -1,4 +1,4 @@
-package basic.workingwithlist
+package workingwithlist
 
 import scala.language.postfixOps // warningが発生するためimport
 

@@ -1,4 +1,4 @@
-package basic.modularprogramming
+package modularprogramming
 
 trait FoodCategories {
 	case class FoodCategory(name: String, foods: List[Food])

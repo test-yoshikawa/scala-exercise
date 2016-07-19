@@ -1,4 +1,4 @@
-package basic.extractors
+package extractors
 
 /**
  * Twice文字列抽出しオブジェクト
