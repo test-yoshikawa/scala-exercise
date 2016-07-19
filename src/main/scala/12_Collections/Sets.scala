@@ -1,4 +1,4 @@
-package basic.collections
+package collections
 
 /**
  * Set サンプル

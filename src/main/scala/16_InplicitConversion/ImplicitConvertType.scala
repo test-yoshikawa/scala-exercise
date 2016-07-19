@@ -1,4 +1,4 @@
-package basic.implicitconversion
+package implicitconversion
 
 import scala.language.implicitConversions // warningが発生しないようにimport
 

@@ -1,4 +1,4 @@
-package basic.workingwithxml
+package workingwithxml
 
 object Main {
 	def main(args: Array[String]) {

@@ -1,4 +1,4 @@
-package basic.controlabstraction
+package controlabstraction
 
 /**
  * 制御の抽象化

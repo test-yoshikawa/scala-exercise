@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 /**
  * 列挙型サンプル(Colorクラス)

@@ -1,4 +1,4 @@
-package basic.firststep
+package firststep
 
 /**
  * コマンドライン引数のForとForeachによる出力

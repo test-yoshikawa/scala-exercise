@@ -1,3 +1,3 @@
-package basic.abstractmembers
+package abstractmembers
 
 class Food

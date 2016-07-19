@@ -1,4 +1,4 @@
-package basic.functionalobject
+package functionalobject
 
 /**
  * 有理数　実行用サンプル

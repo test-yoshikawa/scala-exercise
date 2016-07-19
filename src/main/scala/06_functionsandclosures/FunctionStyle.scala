@@ -1,4 +1,4 @@
-package basic.functionsandclosures
+package functionsandclosures
 
 /**
  * 関数型スタイル　サンプル

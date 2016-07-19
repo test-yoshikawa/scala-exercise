@@ -1,7 +1,7 @@
-package basic.AssertionsAndUnitTesting
+package assertionsandunittesting
 
 import org.scalatest.FunSuite
-import basic.CompositionAndInheritance.Element.elem
+import compositionandinheritance.Element.elem
 
 /**
  * ScalaTestを用いたユニットテスト

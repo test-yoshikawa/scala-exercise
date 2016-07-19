@@ -1,4 +1,4 @@
-package basic.buildincontrol
+package buildincontrol
 
 /**
  * Match式　サンプル

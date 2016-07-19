@@ -1,9 +1,9 @@
-package basic.AssertionsAndUnitTesting
+package assertionsandunittesting
 
 import junit.framework.TestCase
 import junit.framework.Assert.assertEquals
 import junit.framework.Assert.fail
-import basic.CompositionAndInheritance.Element.elem
+import compositionandinheritance.Element.elem
 
 /**
  * JUnitを使用したユニットテスト

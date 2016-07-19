@@ -1,6 +1,6 @@
-package basic.caseclassandpatternmatching
+package caseclassandpatternmatching
 
-import basic.caseclassandpatternmatching.Expr._
+import caseclassandpatternmatching.Expr._
 
 /**
  * ケースクラスとパターンマッチ　サンプル実行用

@@ -1,4 +1,4 @@
-package basic.controlabstraction
+package controlabstraction
 
 /**
  * API実行用

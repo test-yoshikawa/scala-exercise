@@ -1,6 +1,6 @@
-package basic.workingwithlist
+package workingwithlist
 
-object HeigherOrderMethod {
+object HigherOrderMethod {
 
 	def main(args: Array[String]) {
 		// Listのマッピング

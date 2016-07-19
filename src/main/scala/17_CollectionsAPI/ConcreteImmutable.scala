@@ -1,4 +1,4 @@
-package basic.collectionsapi
+package collectionsapi
 
 object ConcreteImmutable {
 

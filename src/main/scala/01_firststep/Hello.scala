@@ -1,4 +1,4 @@
-package basic.firststep
+package firststep
 
 /**
  * Hello　World!
@@ -10,5 +10,5 @@ object Hello {
     println("max(3, 5): " + max(3, 5))
 	}
 
-  def max(x: Int, y: Int) = if( x > y) x else y
+  def max(x: Int, y: Int) = if(x > y) x else y
 }

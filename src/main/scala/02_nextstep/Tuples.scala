@@ -1,4 +1,4 @@
-package basic.nextstep
+package nextstep
 
 /**
  * タプル　サンプル

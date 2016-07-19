@@ -1,4 +1,4 @@
-package basic.compositionandinheritance
+package compositionandinheritance
 
 /**
  * レイアウト要素を表現するオブジェクト

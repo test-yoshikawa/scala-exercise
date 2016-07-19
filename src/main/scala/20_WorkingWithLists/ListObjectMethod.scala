@@ -1,4 +1,4 @@
-package basic.workingwithlist
+package workingwithlist
 
 object ListObjectMethod {
 

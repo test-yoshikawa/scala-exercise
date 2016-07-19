@@ -1,4 +1,4 @@
-package basic.compositionandinheritance
+package compositionandinheritance
 
 /**
  * レイアウト要素を扱う（配列版）

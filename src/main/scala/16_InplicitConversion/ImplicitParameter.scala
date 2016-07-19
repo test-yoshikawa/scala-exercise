@@ -1,4 +1,4 @@
-package basic.implicitconversion
+package implicitconversion
 
 import Implicit._	// 暗黙の型を利用したい場合はインポートをする
 import GreeterPrefs._

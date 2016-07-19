@@ -1,4 +1,4 @@
-package basic.workingwithxml
+package workingwithxml
 
 class CCTherm {
 	val description = "ht dog #5"

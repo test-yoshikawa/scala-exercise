@@ -1,4 +1,4 @@
-package basic.typeparameterization
+package typeparameterization
 
 /**
  * 型のパラメータ化　サンプル

@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 /** 抽象型とファクトリーメソッドをAbstractCurrencyの外にだす */
 abstract class CurrencyZone {

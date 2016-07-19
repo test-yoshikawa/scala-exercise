@@ -1,4 +1,4 @@
-package basic.traits
+package traits
 
 /**
  * 足がついている動物Trait

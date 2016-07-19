@@ -1,4 +1,4 @@
-package basic.implicitconversion
+package implicitconversion
 
 object Greeter {
 	implicit val prompt = new PreferredPrompt("Yes, master>")

@@ -1,4 +1,4 @@
-package basic.traits
+package traits
 
 /**
  * 動物Trait

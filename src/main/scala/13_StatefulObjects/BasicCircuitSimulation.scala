@@ -1,4 +1,4 @@
-package basic.statefulobjects.simulation
+package statefulobjects.simulation
 
 /**
  * 基本論理ゲートの3つの回路（NOT, AND, OR）を定義する抽象クラス

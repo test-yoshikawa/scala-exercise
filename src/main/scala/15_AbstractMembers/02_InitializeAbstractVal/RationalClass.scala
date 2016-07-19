@@ -1,4 +1,4 @@
-package basic.abstractmembers
+package abstractmembers
 
 class RationalClass(n: Int, d: Int) extends {
 	val numerArg = n

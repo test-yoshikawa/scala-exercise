@@ -1,4 +1,4 @@
-package basic.typeparameterization
+package typeparameterization
 
 /**
  * Queueの基本形
