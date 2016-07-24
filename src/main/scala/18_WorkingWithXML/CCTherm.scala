@@ -1,5 +1,6 @@
 package workingwithxml
 
+/** XMLサンプル */
 class CCTherm {
 	val description = "ht dog #5"
 	val yearMade = 1952

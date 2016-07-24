@@ -1,90 +1,70 @@
 package compositionandinheritance
 
-/**
- * レイアウト要素を表現するオブジェクト
- */
+/** レイアウト要素を表現するオブジェクト */
 object Element {
-	// 非公開クラスの実装の隠ぺい
-	private class ArrayElementHidden(val contents: Array[String]) extends Element
+  /** ファクトリーメソッド
+    *
+    * @param contents Array[String]
+    * @return Element
+    */
+  def elem(contents: Array[String]): Element = new ArrayElement(contents)
 
-	private class LineElementHidden(s: String, override val height: Int) extends Element {
-		def contents = Array(s)
-		override val width = s.length
-		// override val height = 1 // -Xcheckinitオプションつけると実行時例外が発生するので、コンストラクタで設定させる
-	}
+  /** ファクトリーメソッド
+    *
+    * @param line String
+    * @return Element
+    */
+  def elem(line: String): Element = new LineElement(line)
 
-	private class UniformElementHidden(ch: Char, override val width: Int, override val height: Int) extends Element {
-		def contents = Array.fill(height)(ch.toString * width)
-	}
-
-	// ファクトリーメソッドの実装
-	def elem(contents: Array[String]): Element = new ArrayElementHidden(contents)
-	def elem(line: String): Element = new LineElementHidden(line, 1)
-	def elem(ch: Char, width: Int, height: Int): Element = new UniformElementHidden(ch, width, height)
+  /** ファクトリーメソッド
+    *
+    * @param ch Char
+    * @param width Int
+    * @param height Int
+    * @return Element
+    */
+  def elem(ch: Char, width: Int, height: Int): Element = new UniformElement(ch, width, height)
 }
-
 
 /**
  * レイアウト要素を表現する抽象クラス
  */
 import Element.elem
 abstract class Element {
-	def contents: Array[String]
+  def contents: Array[String]
 
-	// height、widthはdefで定義手もよいはvalのほうがわずかだが速い
-	// クラスが初期化されるときに先に計算されているため
-	val height = contents.length
-	val width = if (height == 0) 0 else contents(0).length
+  // height、widthはdefで定義よりかはvalのほうがわずかだが速い
+  // クラスが初期化されるときに先に計算されているため
+  val height = contents.length
+  val width = if (height == 0) 0 else contents(0).length
 
-	def demo() {
-		println("Elements's implementation invoked")
-	}
+  /** デモ */
+  def demo() {
+    println("Elements's implementation invoked")
+  }
 
-	/**
-	 * 2つのcontentsを連結する
-	 */
-	def above(that: Element): Element = {
-		val this1 = this widen that.width
-		val that1 = that widen this.width
-		elem(this1.contents ++ that1.contents)
-	}
+  /** 2つのcontentsを連結する（Array("a", "b") beside Array("c", "d") => Array("a", "b", "c", "d")）
+    *
+    * @param that Element
+    * @return 連結したElement
+    */
+  def above(that: Element): Element = {
+    elem(this.contents ++ that.contents)
+  }
 
-	/**
-	 * 2つの要素を並べる
-	 */
-	def beside(that: Element): Element = {
-		val this1 = this heighten that.height
-		val that1 = that heighten this.height
-		// 命令型スタイル
-		//		for (i <- 0 until this.contents.length) {
-		//			contents(i) = this.contents(i) + that.contents(i)
-		//		}
-		elem(for ((line1, line2) <- this1.contents zip that1.contents) yield line1 + line2)
-	}
+  /** ２つのcontentsを横に並べる（Array("a", "b") beside Array("c", "d") => Array("a", "c", "b", "d")）
+    *
+    * @param that Element
+    * @return 連結したElement
+    */
+  def beside(that: Element): Element = {
+    val contents = new Array[String](this.contents.length)
+    // 命令型スタイル
+//    for (i <- 0 until this.contents.length) {
+//      contents(i) = this.contents(i) + that.contents(i)
+//    }
+    elem(for ((line1, line2) <- this.contents zip that.contents) yield line1 + line2)
+  }
 
-	/**
-	 * 同じ幅になるように調整する
-	 */
-	def widen(w:Int): Element = {
-		if (w <= height) this
-		else {
-			val left = elem(' ', (w - width) / 2, height)
-			val right = elem(' ', w - width - left.width, height)
-			left beside this beside right
-		}
-	}
-
-	/**
-	 * 同じ高さになるように調整する
-	 */
-	def heighten(h: Int): Element = {
-		if (h <= height) this
-		else {
-			val top = elem(' ', width, (h - height) / 2)
-			val bot = elem(' ', width, h - height - top.height)
-			top above this above bot
-		}
-	}
-
-	override def toString = contents mkString "\n"
+  override def toString = contents mkString "\n"
 }

@@ -1,10 +1,10 @@
 package traits
 
-/**
- * トレイト
- */
+/** トレイト */
 trait Philosophical {
-	def philosophize() {
-		println("I consume memory, therefore I am!")
-	}
+
+  /** 出力 */
+  def philosophize() {
+    println("I consume memory, therefore I am!")
+  }
 }

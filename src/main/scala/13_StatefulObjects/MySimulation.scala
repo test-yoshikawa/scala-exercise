@@ -1,23 +1,26 @@
 package statefulobjects.simulation
 
-/**
- * デジタル回路シミュレーション
- */
+/** デジタル回路シミュレーション */
 object MySimulation extends CircuitSimulation {
-	def InverterDelay = 1
-	def AndGateDelay = 3
-	def OrGateDelay = 5
 
-	def main(args: Array[String]) {
-		val input1, input2, sum, carry = new Wire
+  def InverterDelay = 1
+  def AndGateDelay = 3
+  def OrGateDelay = 5
 
-		probe("sum", sum)
-		probe("carry", carry)
+  /** メイン実行
+    *
+    * @param args コマンドライン引数
+    */
+  def main(args: Array[String]) {
+    val input1, input2, sum, carry = new Wire
 
-		halfAdder(input1, input2, sum, carry)
-		input1 setSignal true
-		run()
-		input2 setSignal true
-		run()
-	}
+    probe("sum", sum)
+    probe("carry", carry)
+
+    halfAdder(input1, input2, sum, carry)
+    input1 setSignal true
+    run()
+    input2 setSignal true
+    run()
+  }
 }

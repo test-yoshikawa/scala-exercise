@@ -1,8 +1,6 @@
 package modularprogramming
 
-/**
- * Foodエンティティークラス
- */
+/** Foodエンティティークラス */
 abstract class Food(val name: String) {
-	override def toString = name
+  override def toString = name
 }
