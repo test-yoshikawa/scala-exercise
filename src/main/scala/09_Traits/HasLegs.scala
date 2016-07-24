@@ -1,6 +1,4 @@
 package traits
 
-/**
- * 足がついている動物Trait
- */
+/** 足がついている動物Trait */
 trait HasLegs

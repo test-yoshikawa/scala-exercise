@@ -1,6 +1,4 @@
 package traits
 
-/**
- * 動物Trait
- */
+/** 動物Trait */
 class Animal

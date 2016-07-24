@@ -1,25 +1,24 @@
 package abstractmembers
 
+/** 遅延評価Rational Trait */
 trait LazyRationalTrait {
-	val numerArg: Int
-	val denomArg: Int
+  val numerArg: Int
+  val denomArg: Int
 
-	println("Constructor " + numerArg + "/" + denomArg)
+  println("Constructor " + numerArg + "/" + denomArg)
+  private lazy val g = {
+    require(denomArg != 0)
+    gcd(numerArg, denomArg)
+  }
+  lazy val numer: Int = numerArg / g
+  lazy val denom: Int = denomArg / g
 
-	private lazy val g = {
-		require(denomArg != 0)
-		gcd(numerArg, denomArg)
-	}
-	lazy val numer: Int = numerArg / g
-	lazy val denom: Int = denomArg / g
+  /**
+   * 最大公約数を求める
+   *
+   */
+  def gcd(a: Int, b: Int): Int =
+    if (b == 0) a else gcd(b, a % b)
 
-	/**
-	 * 最大公約数を求める
-	 *
-	 */
-	def gcd(a: Int, b: Int): Int =
-		if (b == 0) a else gcd(b, a % b)
-
-	override def toString = numer + "/" + denom
-
+  override def toString = numer + "/" + denom
 }

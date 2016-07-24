@@ -1,68 +1,122 @@
 package functionalobject
 
-/**
- * 有理数（Rational Number）クラス
- */
+/** 有理数（Rational Number）クラス */
 class Rational(n: Int, d: Int) extends Ordered[Rational] {
-	// 事前条件( require(...) )falseの場合はIllegalArgumentExceptionをスローする
-	require(d != 0)	// これより上の処理は実行される
-	private val g = gcd(n.abs, d.abs)
-	val number: Int = n / g
-	val denom: Int = d / g
-	def this(n: Int) = this(n, 1) // 補助コンストラクタ
+  // 事前条件( require(...) )falseの場合はIllegalArgumentExceptionをスローする
+  require(d != 0)	// これより上の処理は実行される
+  private val g = gcd(n.abs, d.abs) // 最大公約数
+  val number: Int = n / g				// 数値（分子）
+  val denominator: Int = d / g	// 分母
 
-	override def toString = number + "/" + denom
+  override def toString = number + "/" + denominator
 
-	/**
-	 * 最大公約数を求める
-	 */
-	def gcd(a: Int, b: Int): Int =
-		if (b == 0) a else gcd(b, a % b)
+  /** 補助Constructor
+    * 整数を返す
+    *
+    * @param n 整数
+    * @return constructor
+    */
+  def this(n: Int) = this(n, 1)
 
-	/**
-	 * 引数より小さいかどうか判定する
-	 * ・addメソッドはn, dにしかアクセスできず、thatはaddメソッドのレシーバーでないので、that.n, that.dとできない。
-	 * ・フィールドにすることで解決される
-	 */
-	def lessThan(that: Rational) =
-		this.number * that.denom < that.number * this.denom
+  /** 最大公約数を求める
+    *
+    * @param a 数値
+    * @param b 数値
+    * @return 最大公約数
+    */
+  def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
-	/**
-	 * 引数より大きいかどうか判定する
-	 */
-	def max(that: Rational) =
-		if (this.lessThan(that)) that else this
+  /** 指定した引数より小さいかどうか判定する
+    *
+    * @param that 分数
+    * @return true: 小さい, false: 大きい
+    */
+  def lessThan(that: Rational) =
+    // that.n, that.dを参照できないためフィールドにして参照する
+    this.number * that.denominator < that.number * this.denominator
 
-	/*********************************
-	 * 分数の演算
-	 *********************************/
-	def add(that: Rational): Rational =
-		new Rational(number * that.denom + that.number + denom, denom * that.denom)
+  /** 引数より大きいかどうか判定する
+    *
+    * @param that 分数
+    * @return true: 大きい, false: 小さい
+    */
+  def max(that: Rational) = if (this.lessThan(that)) that else this
 
-	def + (i:Int): Rational =
-		new Rational(number + i * denom, denom)
+  /** 分数の加算
+    *
+    * @param that 分数（Rational）
+    * @return 計算結果
+    */
+  def add(that: Rational): Rational =
+    new Rational(number * that.denominator + that.number + denominator, denominator * that.denominator)
 
-	def + (that: Rational): Rational =
-		new Rational(number * that.denom + that.number + denom, denom * that.denom)
+  /** 分数の加算
+    *
+    * @param i 整数
+    * @return 計算結果
+    */
+  def + (i:Int): Rational =
+    new Rational(number + i * denominator, denominator)
 
-	def - (i:Int): Rational =
-		new Rational(number - i * denom, denom)
+  /** 分数の加算（overload）
+    *
+    * @param that 分数
+    * @return 計算結果
+    */
+  def + (that: Rational): Rational =
+    new Rational(number * that.denominator + that.number + denominator, denominator * that.denominator)
 
-	def - (that: Rational): Rational =
-		new Rational(number * that.number, denom * that.denom)
+  /** 分数の減算
+    *
+    * @param i 整数
+    * @return 計算結果
+    */
+  def - (i:Int): Rational =
+    new Rational(number - i * denominator, denominator)
 
-	def * (that: Rational): Rational =
-		new Rational(number * that.number, denom *  that.denom)
+  /** 分数の減算
+    *
+    * @param that 分数
+    * @return 計算結果
+    */
+  def - (that: Rational): Rational =
+    new Rational(number * that.number, denominator * that.denominator)
 
-	def * (i: Int): Rational =
-		new Rational(number * i, denom)
+  /** 分数の乗算
+    *
+    * @param i 整数
+    * @return 計算結果
+    */
+  def * (i: Int): Rational =
+    new Rational(number * i, denominator)
 
-	def / (that: Rational): Rational =
-		new Rational(number * that.denom, denom * that.number)
+  /** 分数の乗算
+    *
+    * @param that 分数
+    * @return 計算結果
+    */
+  def * (that: Rational): Rational =
+    new Rational(number * that.number, denominator *  that.denominator)
 
-	/*********************************
-	 * 分数の比較
-	 *********************************/
-	// Orderedトレイトをミックスインすれば比較演算子（<, >, <= >=）の定義はcompere メソッドで対応できる
-	def compare(that: Rational) = (this.number * that.denom) - (that.number * this.denom)
+  /** 分数の除算
+    *
+    * @param that 分数
+    * @return 計算結果
+    */
+  def / (that: Rational): Rational =
+    new Rational(number * that.denominator, denominator * that.number)
+
+  /** 分数の比較
+    * ・Orderedトレイトをミックスインすれば比較演算子（<, >, <= >=）の定義はcompere メソッドで対応できる
+    *
+    * @param that 分数
+    * @return `x` where:
+    *
+    *   - `x < 0` when `this < that`
+    *
+    *   - `x == 0` when `this == that`
+    *
+    *   - `x > 0` when  `this > that`
+    */
+  def compare(that: Rational) = (this.number * that.denominator) - (that.number * this.denominator)
 }

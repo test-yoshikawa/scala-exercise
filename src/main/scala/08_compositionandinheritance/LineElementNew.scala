@@ -1,9 +1,7 @@
 package compositionandinheritance
 
-/**
- * ArrayElementを拡張
- */
-class LineElement2(s: String) extends Element {
+/** ArrayElementを拡張 */
+class LineElementNew(s: String) extends ElementNew {
 
 	val contents = Array(s)
 

@@ -1,3 +1,4 @@
 package launch {
-	class Booster3
+
+  class Booster3
 }

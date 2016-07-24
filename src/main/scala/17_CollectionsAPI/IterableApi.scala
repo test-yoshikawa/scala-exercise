@@ -1,6 +1,7 @@
 package collectionsapi
 
-object Iterables {
+/** Iterable API */
+object IterableApi {
 
 	def main(args: Array[String]): Unit = {
 		val list1 = List(1, 2, 3, 4, 5)

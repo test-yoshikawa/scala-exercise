@@ -1,13 +1,11 @@
 package classandobject
 
-/**
- * Applicationトレイトを利用したアプリケーション
- */
+/** Applicationトレイトを利用したアプリケーション */
 object MainExtendsApp extends App {
-		println("execute ChecksumAccumlator")
-		println("Chapter4 => " + CheckSumAccumlator.calculate("Chapter4"))
-		println()
-		println("Chapter4.1 => " + CheckSumAccumlator.calculate("Chapter4.1"))
-		println()
-		println("Chapter4 => " + CheckSumAccumlator.calculate("Chapter4"))
+  println("execute ChecksumAccumulator")
+  println("Chapter4 => " + CheckSumAccumulator.calculate("Chapter4"))
+  println()
+  println("Chapter4.1 => " + CheckSumAccumulator.calculate("Chapter4.1"))
+  println()
+  println("Chapter4 => " + CheckSumAccumulator.calculate("Chapter4"))
 }

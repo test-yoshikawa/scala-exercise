@@ -1,9 +1,6 @@
 package abstractmembers
 
-/**
- * 遅延評価val デモ
- *
- */
+/** val デモ */
 object Demo {
 	val x = { println("initializing x"); "done" }
 }

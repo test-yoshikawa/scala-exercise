@@ -1,8 +1,6 @@
 package modularprogramming
 
-/**
- * モック実装のブラウザーモジュール
- */
+/** モック実装のブラウザーモジュール */
 object StudentBrowser extends Browser {
-	val database = StudentDatabase
+  val database = StudentDatabase
 }
