@@ -5,12 +5,10 @@ import org.scalacheck.Prop._
 import org.scalatest.WordSpec
 import org.scalatest.prop.Checkers
 
-/**
- * ScalaCheckを用いたユニットテスト
- */
+/** ScalaCheckを用いたユニットテスト */
 class ElementScalaCheck extends WordSpec with Checkers {
   // implicit override val generatorDrivenConfig =
-  // 	PropertyCheckConfig(minSize = 10, maxSize = 20)
+  // PropertyCheckConfig(minSize = 10, maxSize = 20)
 
   "elem result" must {
     "have passed width" in {

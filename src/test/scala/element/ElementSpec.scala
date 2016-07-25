@@ -5,9 +5,11 @@ import org.scalatest._
 
 /** ふるまい駆動開発（behavior-driven development:BDD）のテストスタイル
   *
-  * ShouldMatchersトレイトは非推奨なため実行できない
+  * - ShouldMatchersトレイトは非推奨なため実行できない
   *
-  * ＝＞「Unfortunately Suite has been deprecated as a style trait. Please use trait Spec instead.」
+  * - 非推奨なTraitを使用すると以下のメッセージが表示され実行が止まったままになる
+  *
+  * 「Unfortunately Suite has been deprecated as a style trait. Please use trait Spec instead.」
   *
   */
 class ElementSpec extends FlatSpec with Matchers {
