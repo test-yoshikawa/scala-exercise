@@ -16,7 +16,7 @@ object LineCountFromFile {
   def main(args: Array[String]) {
     println()
     println("##### ファイル内容 #####")
-    val filename = "./src/main/scala/02_nextstep/LineCountFromFile.scala"
+    val filename = "./src/main/scala/work/LineCountFromFile.scala"
     for (line <- Source.fromFile(filename).getLines()) {
       println(line.length + " " + line)
     }

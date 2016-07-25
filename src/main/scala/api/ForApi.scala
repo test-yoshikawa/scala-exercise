@@ -28,7 +28,7 @@ object ForApi {
 
     println()
     println("==== for filter ====")
-    val filesHere = (new java.io.File("./src/main/scala/05_buildincontrol")).listFiles
+    val filesHere = (new java.io.File("./src/main/scala/api")).listFiles
     for(file <- filesHere if file.getName.endsWith(".txt"))
       println(file)
 
