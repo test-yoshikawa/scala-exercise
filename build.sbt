@@ -34,3 +34,18 @@ libraryDependencies ++= Seq(
 	"org.scala-lang" % "scala-compiler" % "2.11.7",			// Scalaコンパイラ（evalを利用するため）
 	"commons-lang" % "commons-lang" % "2.6"
 )
+
+val message = settingKey[String]("message") // キーの設定(nameとか)(val みたいなもの)
+val say = taskKey[Unit]("say") // コンパイルとかの定義(def みたいなもの) sbt -> say
+val Kansai = config("kansai") // Scopeの定義
+
+message := {
+	println("setting load")
+	"hello"
+}
+
+// sbt -> sayで「hello」が表示される
+say := {
+	println(message.value)
+}
+message in Kansai := "hello_kansai"
