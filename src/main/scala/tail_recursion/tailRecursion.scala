@@ -95,8 +95,10 @@ object TailRecursion {
     * @return n項目目のフィボナッチ数
     */
   def fibonacci(n: Int): Int = {
+    // 末尾再帰でない
 //    if(n == 0 || n == 1) 1
 //    else fibonacci(n - 2) + fibonacci(n - 1)
+    // 末尾再帰
     def fib(i: Int, num1: Int, num2: Int): Int = {
       if(i == 0) num1
       else fib(i - 1, num1 + num2, num1)
