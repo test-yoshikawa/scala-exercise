@@ -130,6 +130,11 @@ object TailRecursion {
     product(ints, 1)
   }
 
+  /** List[Int]の要素の中で最大値を返す
+    *
+    * @param ints List[Int]
+    * @return 最大値
+    */
   def maxElem(ints: List[Int]): Int = {
     def max(nums: List[Int], num: Int): Int = nums match {
       case Nil => num
