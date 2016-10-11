@@ -49,4 +49,4 @@ message := {
 say := {
 	println(message.value)
 }
-message in Kansai := "hello_kansai" // Scopeを指定する
+message in Kansai := "hello_kansai"
