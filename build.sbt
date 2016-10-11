@@ -35,6 +35,7 @@ libraryDependencies ++= Seq(
 	"commons-lang" % "commons-lang" % "2.6"
 )
 
+// sbt ハンズオン
 val message = settingKey[String]("message") // キーの設定(nameとか)(val みたいなもの)
 val say = taskKey[Unit]("say") // コンパイルとかの定義(def みたいなもの) sbt -> say
 val Kansai = config("kansai") // Scopeの定義
