@@ -1,2 +1,2 @@
-scala-exercise!
+scala-exercise for studying scala
 
